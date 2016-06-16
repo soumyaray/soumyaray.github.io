@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/soumyaray
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://soumyaray.com
+  * I am soumyaray (https://keybase.io/soumyaray) on keybase.
+  * I have a public key with fingerprint 8542 E525 71ED 93CB 27C4  925E 15D9 AACD CE51 0594
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "010119f5ab5a9174b2f95b733b2aef344091ff09ef8eded99267fab7f33b17f76cd50a",
+            "fingerprint": "8542e52571ed93cb27c4925e15d9aacdce510594",
+            "host": "keybase.io",
+            "key_id": "15d9aacdce510594",
+            "kid": "010119f5ab5a9174b2f95b733b2aef344091ff09ef8eded99267fab7f33b17f76cd50a",
+            "uid": "390499dcf246ba42b8cab44509b77a19",
+            "username": "soumyaray"
+        },
+        "service": {
+            "hostname": "soumyaray.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1466088283,
+    "expire_in": 157680000,
+    "prev": "e9b58fecaf8d213fcccfb28d3f39128e15d0b887b363b204afb55fd295e30c26",
+    "seqno": 5,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG/MacGPG2 v2.0
+Comment: GPGTools - http://gpgtools.org
+
+owGtkltIFUEYx8/xircKIi0qqRUKL8je5uzOyUJ7CLoaFJoVHWdmZ46rnt11zx5T
+RKiM0i5gRA9dKCN66UJFimEXukAi4kPRQ0iUCqWVkRS9BEWzUi/RY/MyzDe//3++
+75uvOyc5kBnMrm32crZ//BIcfo8D1fiu2SZg22gVwm1CA53daKNB416kwTSEsCBK
+oiRBBhAGCEqaimUGAdYUBcuIMkVVRSgxJkLKdGpQA0I5pDGENcYJSWNaiBhAREKJ
+wEwrSl3HNS2P2+pAlSmQgSZxjUKwrBEVyoBKwIAIEYNQIIkAqlxYZ8d9BU8Oozgt
+NW0e44fIbHr/4P9z3olZOwWKKoQGYbIawkiVsU4QVlUgQqxpSII+GKeuhWKU03E7
+EWtFLmoV2ksEHm42CfU765fyN1JK7BhXO67t2cRu5Fd1nueEfaXX6vjoXoojv00i
+2LQM3kguaKZu3LQtISxxknim7yqpoZCo67KulAi0xTFdGjF9AmghXeTLf4Y2c0sK
+MdBZDSWI6YYsKYwQwrCsGwpToCTr/j+IWNc1rIR4x0QVMQwAM2QIqCISOST4dTVZ
+thAGPE8U9SsyoxbyEi4V2jO7gktSAsHMQFpqkj9igcyMeX/m7uiH9J9FFSc68saW
+T/bpo/uH7i872n1Jr3paClJXRF7u2nIsJfnO5Mby7nM3j1fPX5xTXHm6L8ta3xd9
+9jmva2L8+0B9eOjq6rMj0zc2d5Q1LlZH+3HV151TvfnlbuHGvLlFBbuHD1ReePsY
+Tc/M3CeJbTuKmzbti8xJM4JlqQOrdqdeuNJ/bu0DZ7SqPoBXZpxKylk0XlqScrZh
+3eaimkVOJ3i0cE/Pw5b4j2vk3Yb8SMOC4UKt5s3e2hFnKHvQKrhdmx4ou5jo6v3y
+rWds4tVgZSx273Ll1jkPs3pIU8XBrtz4ZNaZwsOHPh3JOl9gn5Q7bj154ax57tDL
+j438zuuvt08tHdZzfwE=
+=ohh/
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/soumyaray
+
+==================================================================

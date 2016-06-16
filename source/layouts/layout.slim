@@ -5,12 +5,24 @@ html
     meta charset="utf-8"
     meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"
 
-    title = current_page.data.title || "The Middleman"
+    title = current_page.data.title || "Soumya Ray"
 
-    link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'
-
-    == stylesheet_link_tag :site
+    == stylesheet_link_tag :styles
     == javascript_include_tag  "all"
+    / link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/cerulean/bootstrap.min.css" rel="stylesheet" integrity="sha384-fUMURLTdEcpeYHly3PAwggI3l2UvdHNg/I+8LRph7hLDcAZm77YfDx3Tjum9d3vK" crossorigin="anonymous"
+    link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/paper/bootstrap.min.css" rel="stylesheet" integrity="sha384-2mX2PSpkRSXLQzmNzH3gwK6srb06+OfbDlYjbog8LQuALYJjuQ3+Yzy2JIWNV9rW" crossorigin="anonymous"
+
+    script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"
+    script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"
 
   body class="#{page_classes}"
-    == yield
+    div class="container"
+      div class="row"
+        div class="col-sm-3"
+          / div class="affix"
+          / header
+          == partial "side_menu"
+
+        div class="col-sm-9"
+          section
+            == yield
