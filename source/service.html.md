@@ -1,6 +1,6 @@
-## Academic Service
+### Academic Service
 
-### Journal Reviews:
+#### Journal Reviews:
 - MIS Quarterly (MISQ) - 2014, 2013, 2012
 - Information Systems Research (ISR) - 2012
 - Decision Sciences Journal (DSJ) - 2014
@@ -11,18 +11,18 @@
 - Pacific Asian Journal of the Association for Information Systems (PAJAIS) - 2011
 - National Taiwan University (NTU) Management Review  - 2014
 
-### Conference Service:
+#### Conference Service:
 - Panelist: International Conference on Service Science and Innovation (ICSSI) 2013
 - Discussant: International Association for Management of Technology (IAMOT) 2012
 
-### Conference Reviews:
+#### Conference Reviews:
 - International Conference on Information Systems (ICIS) - 2014, 2012
 - Hawaii International Conference on System Sciences (HICSS) - 2014, 2013, 2011
 - International Conference on Information Resources Management (ICIRM) - 2011
 - Pacific Asia Conference on Information Systems (PACIS) - 2009
 - CHI 2015
 
-### Invited talks (Taiwan):
+#### Invited talks (Taiwan):
 - National Taiwan University (2011)
 - National Central University (2012)
 - National Sun Yat-Sen University (2013, 2012)

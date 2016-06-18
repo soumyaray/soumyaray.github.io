@@ -1,4 +1,4 @@
-## Publications:
+### Publications:
 <!-- JBR paper 2016 (PLS-Predict) -->
 Shmueli, G., Ray, S., Estrada, J. M. V., and Chatla, S. B. 2016. “The elephant in the room: Predictive performance of PLS models,”
 <br>*Journal of Business Research* (forthcoming), pp. 1–13.
