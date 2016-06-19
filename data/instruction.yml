@@ -1,0 +1,38 @@
+---
+highlights:
+  - "SOA"
+  - "BASM"
+courses:
+  - id: "SOA"
+    name: "Service Oriented Architecture"
+    syllabus: "https://docs.google.com/document/d/1qlJsOOrqT-uBxmRaYiGWwlQs6jXEFI5jzk8UGnux27Y/edit"
+    facebook_group:
+      url: "https://www.facebook.com/groups/ISS.SOAD/"
+      name: "Web Service Development @ NTHU"
+    description: >
+      This class develops skills to create reactive application architectures composed of distributed services.
+      We utilize responsive interfaces, microservices, asynchronous background workers, message queues, and web sockets.
+      We train to develop high quality code, publish open source, and deploy on cloud platforms.
+    short_description: Creating high quality, reactive, responsive, cloud-based application architectures
+  - id: "SERVSEC"
+    name: "Service Security"
+    syllabus: "https://docs.google.com/document/d/1gJcwh5cPN0kFbP6-qnpu-_V3XQ_AQP1ux8RhnGOpk3I/edit?usp=sharing"
+    facebook_group:
+      url: "https://www.facebook.com/groups/service.sec/"
+      name: "Service Security @ NTHU"
+    description: >
+      This class transforms students understanding of information and their ability to develop secure software.
+      We ensure authentication, authorization, confidentiality, integrity, and non-repudiation.
+      Students implement encrypted storage and credentials, single sign-on, digital signing, token-based authorization, input validation, content-delivery networks, and content security policies.
+    short_description: Using security principles to create highly secure and innovative services
+  - id: "BASM"
+    name: "Business Analytics Using Statistical Modeling"
+    syllabus: "https://docs.google.com/document/d/1D8B5RHUkllzYolMUvQpV0jhAQcmmhZMzWxYmJG3CnG0/edit"
+    facebook_group:
+      url: "https://www.facebook.com/groups/nthu.analytics/"
+      name: "Busines Analytics @ NTHU"
+    description: >
+      This class develops skills to infer knowledge from high dimensional business data.
+      We compare our intuition and theories with simulation, visualization, and statistics.
+      This class favors computational approaches to boost statistical techniques for complex data.
+    short_description: Analyzing complex business data using computational approaches

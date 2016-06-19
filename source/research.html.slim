@@ -1,0 +1,47 @@
+h1 class="h5" Research
+
+div class="card"
+  div class="panel panel-default"
+    div class="panel-heading"
+      h1 class="h5"
+        = "Publications"
+    div class="panel-body"
+      - data.journal_papers.papers.each do |paper|
+        p
+          = "#{paper.authors.join(', ')} #{paper.year}"
+          br
+          strong #{paper.title}
+          br
+          i #{paper.journal}
+          - if paper.volume
+            = " (#{paper.volume}:#{paper.issue})"
+          - if paper.pages
+            = ", pp. #{paper.pages}"
+    div class="panel-footer"
+      .row
+        .col-xs-6
+          a href="https://scholar.google.com/citations?user=6WjiSOwAAAAJ" Google Scholar Profile
+        .col-xs-6 style="text-align:right;"
+          a href="https://www.researchgate.net/profile/Soumya_Ray5" ResearchGate Profile
+      
+div class="card"
+  div class="panel panel-default"
+    div class="panel-heading"
+      h1 class="h5"
+        = "Research Lab"
+    div class="panel-body"
+      .row
+        .col-md-6
+          span RayLab (雷門) attracts students from a wide set of backgrounds:
+          ul
+            li MIS/CS: students with programming and analytics abilities
+            li Management: students with IT marketing interests
+            li Design: students with product and service design training
+        .col-md-6
+          div style="width:329px;height:247px;overflow:hidden"
+            iframe style="position:relative;left:-21px;top:-2px;" src="https://docs.google.com/presentation/d/1Y56N5yxcAKBzGqdljgC68OQnXKJ9lRHdunujXK35d3k/embed?start=true&loop=true&delayms=3000" frameborder="0" width="380" height="285" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"
+    div class="panel-footer"
+      .row
+        .col-xs-6
+        .col-xs-6 style="text-align:right"
+          a href="https://docs.google.com/presentation/d/1Y56N5yxcAKBzGqdljgC68OQnXKJ9lRHdunujXK35d3k/edit" See Student Profiles

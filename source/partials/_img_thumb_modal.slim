@@ -1,0 +1,9 @@
+a hef="" data-toggle="modal" data-target="#showFull#{id}#{img}" style="cursor: pointer;"
+  img.img-responsive src="#{dir}/#{id}/#{img}_thumb.png" style="text-align:center"
+div id="showFull#{id}#{img}" class="modal fade" role="dialog"
+  div class="modal-dialog"
+    div class="modal-content"
+      div class="modal-header"
+        button type="button" class="close" data-dismiss="modal" &times;
+      div class="modal-body" style="text-align:left;"
+        img.img-responsive src="#{dir}/#{id}/#{img}.png" style="text-align:center"

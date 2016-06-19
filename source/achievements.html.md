@@ -1,17 +1,17 @@
-### Awards and Grants
+##### Awards and Grants
 
-#### Research Awards:
+###### Research Awards:
 - Wu Ta-You Award — 2012 *(National Science Council)*
 - New Faculty Research Award — 2012 *(National Tsing Hua University)*
 
-#### Service Awards:
+###### Service Awards:
 - Outstanding Reviewer - 2014 *(Decision Sciences Journal)*
 
-#### Teaching Awards:
+###### Teaching Awards:
 - Outstanding Teaching Award - 2015 *(National Tsing Hua University)*
 - Outstanding Teaching Award - 2015 *(College of Technology Management)*
 
-#### Grants
+###### Grants
 
 - 2014-2015: Ministry of Science and Technology
   - Technology Addiction in the Context of Smartphones
