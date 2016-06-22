@@ -54,16 +54,17 @@
     padding-top: 12px;
     padding-bottom: 12px;
   }
+}
 
 /* md */
 @media (min-width: 992px) {
   .brand_and_logo {
       width:100%;
   }
-    .logo {
-        margin-top: 20px;
-        width: 150px;
-    }
+  .logo {
+      margin-top: 20px;
+      width: 150px;
+  }
 }
 
 .menu_item a {
@@ -207,12 +208,6 @@ th {
 
 img {
   max-width:100%;
-}
-
-header {
-  /*width:200px;
-  float:left;
-  position:fixed;*/
 }
 
 strong {

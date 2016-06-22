@@ -27,12 +27,6 @@ configure :development do
   activate :livereload
 end
 
-activate :deploy do |deploy|
-  deploy.method = :git
-  deploy.branch = 'master'
-  deploy.build_before = true
-end
-
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper
