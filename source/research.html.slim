@@ -1,9 +1,9 @@
-h1 class="h5" Research
+h1.h5 Research
 
 div class="card"
   div class="panel panel-default"
     div class="panel-heading"
-      h1 class="h5"
+      h2.h6
         = "Publications"
     div class="panel-body"
       - data.journal_papers.papers.each do |paper|
@@ -20,14 +20,16 @@ div class="card"
     div class="panel-footer"
       .row
         .col-xs-6
+          i class="ai ai-google-scholar" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
           a href="https://scholar.google.com/citations?user=6WjiSOwAAAAJ" Google Scholar Profile
         .col-xs-6 style="text-align:right;"
+          i class="ai ai-researchgate" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
           a href="https://www.researchgate.net/profile/Soumya_Ray5" ResearchGate Profile
       
 div class="card"
   div class="panel panel-default"
     div class="panel-heading"
-      h1 class="h5"
+      h2.h6
         = "Research Lab"
     div class="panel-body"
       .row

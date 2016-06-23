@@ -1,18 +1,61 @@
 h1 class="h5" Find Me Online
 
-h2 class="h6" Contact Me
-.container
-  = partial "partials/social/contact_me.slim"
+.row
+  .col-sm-6
+    .panel.panel-default
+      .panel-heading Contact Me
+      .panel-body
+        .row
+          i class="fa fa-envelope" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
+          a href="mailto:soumya.ray@gmail.com" soumya.ray@gmail.com
+        .row
+          i class="fa my-fa-facebook-square" aria-hidden="true"  style="margin-left:10px; margin-right:10px;"
+          a href="https://facebook.com/soumya.ray.prof" facebook/soumya.ray.prof
+        .row
+          i class="fa my-fa-twitter" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
+          a href="https://twitter.com/soumyaray" twitter/soumyaray
 
-h2 class="h6" Verify Me
-.container
-  div class="row"
-    i class="fa fa-user" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
-    a href="https://keybase.io/soumyaray" keybase.io/soumyaray
-  div class="row"
-    / text rendering for fontawesome fonts to counter ad blockers: http://stackoverflow.com/a/25518470/1725028
-    i class="fa fa-key" aria-hidden="true" style="margin-left:10px; margin-right:10px; text-rendering:optimizeLegibility;"
-    a data-toggle="collapse" href="#document" aria-expanded="false" aria-controls="document" PGP public key
-    div id="document" class="collapse"
-      pre class="force-wrap"
-        == partial "security/CE510594.asc"
+  .col-sm-6
+    .panel.panel-default
+      .panel-heading Work With Me
+      .panel-body
+        .row
+          i class="fa fa-github" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
+          a href="https://github.com/soumyaray" github/soumyaray
+        .row
+          i class="fa my-fa-linkedin-square" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
+          a href="https://www.linkedin.com/in/soumyaray" LinkedIn
+.row
+  .col-sm-6
+    .panel.panel-default
+      .panel-heading Watch Me
+      .panel-body
+        .row
+          i class="ai ai-google-scholar" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
+          a href="https://scholar.google.com/citations?user=6WjiSOwAAAAJ" Google Scholar Profile
+        .row
+          i class="ai ai-researchgate" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
+          a href="https://www.researchgate.net/profile/Soumya_Ray5" ResearchGate Profile
+
+  .col-sm-6
+    .panel.panel-default
+      .panel-heading Verify Me
+      .panel-body
+        .row
+          i class="fa my-fa-ggl" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
+          a href="https://keybase.io/soumyaray" keybase.io/soumyaray
+        .row
+          i class="fa fa-key" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
+          a hef="" data-toggle="modal" data-target="#showPgpKey" style="cursor: pointer;" PGP Public Key
+              
+div id="showPgpKey" class="modal fade" role="dialog"
+  div class="modal-dialog"
+    div class="modal-content"
+      div class="modal-header"
+        button type="button" class="close" data-dismiss="modal" &times;
+        h1 class="h4" PGP Public Key
+      div class="modal-body" style="text-align:left;"
+        pre class="force-wrap"
+          == partial "security/CE510594.asc"
+      div class="modal-footer"
+        button type="button" class="btn btn-default" data-dismiss="modal" Close
