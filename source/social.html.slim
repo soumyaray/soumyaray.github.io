@@ -5,49 +5,39 @@ h1 class="h5" Find Me Online
     .panel.panel-default
       .panel-heading Contact Me
       .panel-body
-        .row
-          i class="fa fa-envelope" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
-          a href="mailto:soumya.ray@gmail.com" soumya.ray@gmail.com
-        .row
-          i class="fa my-fa-facebook-square" aria-hidden="true"  style="margin-left:10px; margin-right:10px;"
-          a href="https://facebook.com/soumya.ray.prof" facebook/soumya.ray.prof
-        .row
-          i class="fa my-fa-twitter" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
-          a href="https://twitter.com/soumyaray" twitter/soumyaray
-
+        - data.social.identities.contact.each do |account|
+          .row
+            i class="#{account.icon}" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
+            a href="#{account.url}" #{account.name}
   .col-sm-6
     .panel.panel-default
       .panel-heading Work With Me
       .panel-body
-        .row
-          i class="fa fa-github" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
-          a href="https://github.com/soumyaray" github/soumyaray
-        .row
-          i class="fa my-fa-linkedin-square" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
-          a href="https://www.linkedin.com/in/soumyaray" LinkedIn
+        - data.social.identities.professional.each do |account|
+          .row
+            i class="#{account.icon}" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
+            a href="#{account.url}" #{account.name}
 .row
   .col-sm-6
     .panel.panel-default
       .panel-heading Watch Me
       .panel-body
-        .row
-          i class="ai ai-google-scholar" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
-          a href="https://scholar.google.com/citations?user=6WjiSOwAAAAJ" Google Scholar Profile
-        .row
-          i class="ai ai-researchgate" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
-          a href="https://www.researchgate.net/profile/Soumya_Ray5" ResearchGate Profile
-
+        - data.social.identities.academic.each do |account|
+          .row
+            i class="#{account.icon}" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
+            a href="#{account.url}" #{account.name}
   .col-sm-6
     .panel.panel-default
       .panel-heading Verify Me
       .panel-body
-        .row
-          i class="fa my-fa-ggl" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
-          a href="https://keybase.io/soumyaray" keybase.io/soumyaray
+        - data.social.identities.security.each do |account|
+          .row
+            i class="#{account.icon}" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
+            a href="#{account.url}" #{account.name}
         .row
           i class="fa fa-key" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
           a hef="" data-toggle="modal" data-target="#showPgpKey" style="cursor: pointer;" PGP Public Key
-              
+
 div id="showPgpKey" class="modal fade" role="dialog"
   div class="modal-dialog"
     div class="modal-content"

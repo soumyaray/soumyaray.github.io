@@ -1,12 +1,7 @@
-.row
-  i class="fa fa-envelope" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
-  a href="mailto:soumya.ray@gmail.com" soumya.ray@gmail.com
-.row
-  i class="fa my-fa-facebook-square" aria-hidden="true"  style="margin-left:10px; margin-right:10px;"
-  a href="https://facebook.com/soumya.ray.prof" facebook/soumya.ray.prof
-.row
-  i class="fa my-fa-twitter" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
-  a href="https://twitter.com/soumyaray" twitter/soumyaray
-.row
-  i class="fa fa-github" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
-  a href="https://github.com/soumyaray" github/soumyaray
+- highlighted_accounts = data.social.highlights
+- accounts = data.social.identities.values.flatten
+- contacts = accounts.select { |account| highlighted_accounts.include?(account.id) }
+- contacts.each do |account|
+  .row
+    i class="#{account.icon}" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
+    a href="#{account.url}" #{account.name}
