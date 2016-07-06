@@ -1,7 +1,7 @@
 ---
 highlights:
-  - 'email'
   - 'facebook'
+  - 'researchgate'
   - 'github'
   - 'keybase'
 identities:
@@ -40,4 +40,4 @@ identities:
     - id: "keybase"
       icon: "fa fa-key"
       url: "https://keybase.io/soumyaray"
-      name: "keybase.io/soumyaray"
+      name: "keybase/soumyaray"
