@@ -38,6 +38,6 @@ identities:
       name: "ResearchGate Profile"
   security:
     - id: "keybase"
-      icon: "fa my-fa-ggl"
+      icon: "fa fa-key"
       url: "https://keybase.io/soumyaray"
       name: "keybase.io/soumyaray"
