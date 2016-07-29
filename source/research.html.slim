@@ -14,7 +14,9 @@ div class="card"
           br
           i #{paper.journal}
           - if paper.volume
-            = " (#{paper.volume}:#{paper.issue})"
+            = " (#{paper.volume}"
+            = ":#{paper.issue}" if paper.issue
+            = ")"
           - if paper.pages
             = ", pp. #{paper.pages}"
     div class="panel-footer"

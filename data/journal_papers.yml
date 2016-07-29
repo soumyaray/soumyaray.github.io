@@ -11,6 +11,8 @@ papers:
       - "Chatla, S. B."
     journal: "Journal of Business Research"
     title: "The Elephant in the Room: Predictive Performance of PLS Models"
+    volume: 69
+    pages: 4552–4564
     year: 2016
     abstract: "An outline of how predictive PLS methodology can strengthen theory-building research, with software tools to implement it."
   - id: "ISR2014"
