@@ -3,6 +3,19 @@ highlights:
   - "ISR2014"
   - "JBR2016"
 papers:
+  - id: "JMIS2017"
+    authors:
+      - "Kuem, J."
+      - "Ray, S."
+      - "Siponen, M."
+      - "Kim, S. S."
+    journal: "Journal of Management Information Systems"
+    title: "What Leads to Prosocial Behaviors on Social Networking Services: A Tripartite Model"
+    volume: 34
+    issue: 1
+    pages: 40-70
+    year: 2016
+    abstract: "This study offers three distinct mechanisms that regulate how one’s experience at an SNS translates into commitment that leads to prosocial behavior"
   - id: "JBR2016"
     authors:
       - "Shmueli, G."
@@ -26,7 +39,7 @@ papers:
     title: "The Central Role of Engagement in Online Communities"
     volume: 25
     year: 2014
-    abstract: "Our framework demonstrates what engagement is, where it comes from, and how it powerfully explains knowledge contribution and word of mouth."
+    abstract: "A framework that demonstrates what engagement is, where it comes from, and how it powerfully explains knowledge contribution and word of mouth."
   - id: "IJIM2014"
     authors:
       - "Hsu, P."
