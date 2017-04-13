@@ -1,4 +1,12 @@
 
+task :build do
+  sh 'middleman build'
+end
+
+task :serve do
+  sh 'middleman serve'
+end
+
 namespace :images do
   namespace :convert do
     def change_file_suffix(filename, suffix)
