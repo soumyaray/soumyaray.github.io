@@ -4,9 +4,9 @@ https://keybase.io/soumyaray
 
 I hereby claim:
 
-  * I am an admin of http://soumyaray.com
+  * I am an admin of https://soumyaray.com
   * I am soumyaray (https://keybase.io/soumyaray) on keybase.
-  * I have a public key with fingerprint 8542 E525 71ED 93CB 27C4  925E 15D9 AACD CE51 0594
+  * I have a public key ASDvXblt16GTsSXExfVb2naOUuFsrm-Yn3sw5_8zw5Mpqgo
 
 To do so, I am signing this object:
 
@@ -14,51 +14,37 @@ To do so, I am signing this object:
     "body": {
         "key": {
             "eldest_kid": "010119f5ab5a9174b2f95b733b2aef344091ff09ef8eded99267fab7f33b17f76cd50a",
-            "fingerprint": "8542e52571ed93cb27c4925e15d9aacdce510594",
             "host": "keybase.io",
-            "key_id": "15d9aacdce510594",
-            "kid": "010119f5ab5a9174b2f95b733b2aef344091ff09ef8eded99267fab7f33b17f76cd50a",
+            "kid": "0120ef5db96dd7a193b125c4c5f55bda768e52e16cae6f989f7b30e7ff33c39329aa0a",
             "uid": "390499dcf246ba42b8cab44509b77a19",
             "username": "soumyaray"
         },
         "service": {
             "hostname": "soumyaray.com",
-            "protocol": "http:"
+            "protocol": "https:"
         },
         "type": "web_service_binding",
         "version": 1
     },
-    "ctime": 1466088283,
-    "expire_in": 157680000,
-    "prev": "e9b58fecaf8d213fcccfb28d3f39128e15d0b887b363b204afb55fd295e30c26",
-    "seqno": 5,
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.23"
+    },
+    "ctime": 1496889274,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1496889258,
+        "hash": "6927efaf8a9d0d74140ce70ee09bbc1a2542dd899c0c9e1640c1d4bbbd888592100e4623408eb189d783a43ee54ef4064e7c5df18212cfea4d96281f597bac49",
+        "seqno": 1151590
+    },
+    "prev": "e342572381284b0bc5d09b289864ddcac446e258138962222627e51878850607",
+    "seqno": 23,
     "tag": "signature"
 }
 
 which yields the signature:
 
------BEGIN PGP MESSAGE-----
-Version: GnuPG/MacGPG2 v2.0
-Comment: GPGTools - http://gpgtools.org
-
-owGtkltIFUEYx8/xircKIi0qqRUKL8je5uzOyUJ7CLoaFJoVHWdmZ46rnt11zx5T
-RKiM0i5gRA9dKCN66UJFimEXukAi4kPRQ0iUCqWVkRS9BEWzUi/RY/MyzDe//3++
-75uvOyc5kBnMrm32crZ//BIcfo8D1fiu2SZg22gVwm1CA53daKNB416kwTSEsCBK
-oiRBBhAGCEqaimUGAdYUBcuIMkVVRSgxJkLKdGpQA0I5pDGENcYJSWNaiBhAREKJ
-wEwrSl3HNS2P2+pAlSmQgSZxjUKwrBEVyoBKwIAIEYNQIIkAqlxYZ8d9BU8Oozgt
-NW0e44fIbHr/4P9z3olZOwWKKoQGYbIawkiVsU4QVlUgQqxpSII+GKeuhWKU03E7
-EWtFLmoV2ksEHm42CfU765fyN1JK7BhXO67t2cRu5Fd1nueEfaXX6vjoXoojv00i
-2LQM3kguaKZu3LQtISxxknim7yqpoZCo67KulAi0xTFdGjF9AmghXeTLf4Y2c0sK
-MdBZDSWI6YYsKYwQwrCsGwpToCTr/j+IWNc1rIR4x0QVMQwAM2QIqCISOST4dTVZ
-thAGPE8U9SsyoxbyEi4V2jO7gktSAsHMQFpqkj9igcyMeX/m7uiH9J9FFSc68saW
-T/bpo/uH7i872n1Jr3paClJXRF7u2nIsJfnO5Mby7nM3j1fPX5xTXHm6L8ta3xd9
-9jmva2L8+0B9eOjq6rMj0zc2d5Q1LlZH+3HV151TvfnlbuHGvLlFBbuHD1ReePsY
-Tc/M3CeJbTuKmzbti8xJM4JlqQOrdqdeuNJ/bu0DZ7SqPoBXZpxKylk0XlqScrZh
-3eaimkVOJ3i0cE/Pw5b4j2vk3Yb8SMOC4UKt5s3e2hFnKHvQKrhdmx4ou5jo6v3y
-rWds4tVgZSx273Ll1jkPs3pIU8XBrtz4ZNaZwsOHPh3JOl9gn5Q7bj154ax57tDL
-j438zuuvt08tHdZzfwE=
-=ohh/
------END PGP MESSAGE-----
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg7125bdehk7ElxMX1W9p2jlLhbK5vmJ97MOf/M8OTKaoKp3BheWxvYWTFAvh7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxMTlmNWFiNWE5MTc0YjJmOTViNzMzYjJhZWYzNDQwOTFmZjA5ZWY4ZWRlZDk5MjY3ZmFiN2YzM2IxN2Y3NmNkNTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZWY1ZGI5NmRkN2ExOTNiMTI1YzRjNWY1NWJkYTc2OGU1MmUxNmNhZTZmOTg5ZjdiMzBlN2ZmMzNjMzkzMjlhYTBhIiwidWlkIjoiMzkwNDk5ZGNmMjQ2YmE0MmI4Y2FiNDQ1MDliNzdhMTkiLCJ1c2VybmFtZSI6InNvdW15YXJheSJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoic291bXlhcmF5LmNvbSIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjIzIn0sImN0aW1lIjoxNDk2ODg5Mjc0LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE0OTY4ODkyNTgsImhhc2giOiI2OTI3ZWZhZjhhOWQwZDc0MTQwY2U3MGVlMDliYmMxYTI1NDJkZDg5OWMwYzllMTY0MGMxZDRiYmJkODg4NTkyMTAwZTQ2MjM0MDhlYjE4OWQ3ODNhNDNlZTU0ZWY0MDY0ZTdjNWRmMTgyMTJjZmVhNGQ5NjI4MWY1OTdiYWM0OSIsInNlcW5vIjoxMTUxNTkwfSwicHJldiI6ImUzNDI1NzIzODEyODRiMGJjNWQwOWIyODk4NjRkZGNhYzQ0NmUyNTgxMzg5NjIyMjI2MjdlNTE4Nzg4NTA2MDciLCJzZXFubyI6MjMsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAhT1dYM1Wr7wQ4+rV45KWzL8fMZ4tfHQ1KQmh/nQ4m86ro5z2QqWe8bgycy4kFqRXoHECxrX+K3e7a8w+Cn7zAahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIBd5l4tBj73SpTDTUH0+GOsfY58PVHWTVkXphC8ZUX1Co3RhZ80CAqd2ZXJzaW9uAQ==
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
