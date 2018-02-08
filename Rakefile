@@ -1,8 +1,9 @@
-
+desc 'Build the site master into build folder'
 task :build do
   sh 'middleman build'
 end
 
+desc 'Serve the site locally'
 task :serve do
   sh 'middleman serve'
 end
@@ -14,7 +15,7 @@ namespace :images do
       base_filename + "_#{suffix}.png"
     end
 
-    # convert all images to thumbnail size (small)
+    desc 'convert all images to thumbnail size (small)'
     task :thumbnail do
       Dir['source/**/*_original.png'].each do |file|
         thumb_file = change_file_suffix(file, 'thumb')
@@ -22,7 +23,7 @@ namespace :images do
       end
     end
 
-    # convert all images to full modal size (medium)
+    desc 'convert all images to full modal size (medium)'
     task :modal do
       Dir['source/**/*_original.png'].each do |file|
         modal_file = change_file_suffix(file, 'modal')
@@ -31,14 +32,15 @@ namespace :images do
     end
   end
 
+  desc 'delete all thumbnail images'
   task :delete do
     Dir['source/**/*_thumb.png'].each { |f| `rm #{f}` }
   end
 end
 
 namespace :url do
-  desc 'Generate integrity hash for a URL'
   # usage: $ rake url:integrity URL=http://example.org/script.js
+  desc 'Generate integrity hash for a URL'
   task :integrity do
     sha384 = `curl -L -s #{ENV['URL']} | openssl dgst -sha384 -binary | openssl enc -base64`
     puts "sha384-#{sha384}"
