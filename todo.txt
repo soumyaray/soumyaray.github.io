@@ -1,0 +1,2 @@
+- Add Conference/workshop proceedings
+- Add rake task descriptions for `rake -T` purposes

@@ -1,5 +1,19 @@
 ---
 services:
+  - id: "service_journals"
+    name: "Editorial Responsibilities"
+    instances:
+      - "Information & Management (I&M) - Editorial Review Board - Associate Editor - 2018-present"
+      - "Journal of Applied Structural Equation Modeling (JASEM) - Editorial Advisory Board - 2018-present"
+
+  - id: "service_conference"
+    name: "Conference Service"
+    instances:
+      - "Session Chair: INFORMS International 2018 - Predictive Analytics in Service and Education"
+      - "Session Chair: INFORMS International 2018 - Data Privacy, Path Models and Predictive Analytics"
+      - "Panelist: International Conference on Service Science and Innovation (ICSSI) 2013"
+      - "Discussant: International Association for Management of Technology (IAMOT) 2012"
+
   - id: "review_journal"
     name: "Journal Reviews"
     instances:
@@ -12,12 +26,6 @@ services:
       - "Information Systems and e-Business Management (ISEB) - 2012"
       - "Pacific Asian Journal of the Association for Information Systems (PAJAIS) - 2011"
       - "National Taiwan University (NTU) Management Review  - 2014"
-
-  - id: "service_conference"
-    name: "Conference Service"
-    instances:
-      - "Panelist: International Conference on Service Science and Innovation (ICSSI) 2013"
-      - "Discussant: International Association for Management of Technology (IAMOT) 2012"
 
   - id: "review_conference"
     name: "Conference Reviews"
