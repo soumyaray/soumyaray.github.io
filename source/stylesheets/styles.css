@@ -4,6 +4,12 @@
     text-align:center;
 }
 
+/* Bootstrap Override: https://stackoverflow.com/questions/20721248/best-way-to-override-bootstrap-css */
+.brandname#bootstrap-override {
+  font-size: 20px;
+  font-weight: 900;
+}
+
 /* xs */
 @media (min-width: 300px) {
   .brand_and_logo {
@@ -68,7 +74,8 @@
 }
 
 .menu_item a {
-  font-weight: bold;
+  font-size: 15px;
+  font-weight: 400;
   color: #576D94;
   text-align: center;
 }
@@ -86,7 +93,6 @@
 
 .pub_ref {
   format: block;
-/*  border: 1px dashed blue;*/
 }
 
 .pub_cit, .pub_url {
@@ -94,7 +100,6 @@
   display: inline-block;
   font-style: italic;
   font-size: 0.8em;
-/*  border: 1px dashed red;*/
 }
 
 .journal {
@@ -227,10 +232,6 @@ hr {
 }
 
 footer {
-  /*width:200px;*/
-  /*float:left;*/
-  /*position:fixed;
-  bottom:50px;*/
   padding-top:50px;
   text-align: center;
 }
