@@ -1,4 +1,20 @@
 ---
+editorial_responsibilities:
+  - id: IM_2018
+    outlet: Information & Management (I&M)
+    board: Editorial Review Board
+    position: Associate Editor
+    dates: 2018-present
+    event_date: 2018-02-08
+    event_description: Assuming responsibilities as an Associate Editor of Information & Management (I&M)
+  - id: JASEM_2018
+    outlet: Journal of Applied Structural Equation Modeling (JASEM)
+    board: Editorial Review Board
+    position: Associate Editor
+    dates: 2018-present
+    event_date: 2018-02-03
+    event_description: Delighted to join the Editorial Advisory Board of the Journal of Applied Structural Equation Modeling
+
 services:
   - id: "service_journals"
     name: "Editorial Responsibilities"

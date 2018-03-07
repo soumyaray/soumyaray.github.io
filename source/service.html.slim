@@ -1,4 +1,4 @@
-h1.h5 Academic Service
+h1.section_title Academic Service
 
 .row
   - services = data.service.services
@@ -7,9 +7,9 @@ h1.h5 Academic Service
       div class="card"
         div class="panel panel-default"
           div class="panel-heading"
-            h2.h6
+            h2.card-title
               = services[count].name
           div class="panel-body"
-            ul
+            ul.bullet-free
               - services[count].instances.each do |instance|
                 li #{instance}

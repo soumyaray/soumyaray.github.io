@@ -1,9 +1,10 @@
-h1 class="h5" Find Me Online
+h1.section_title Find Me Online
 
 .row
   .col-sm-6
     .panel.panel-default
-      .panel-heading Contact Me
+      .panel-heading
+        h2.card-title Contact Me
       .panel-body
         - data.social.identities.contact.each do |account|
           .row
@@ -11,7 +12,8 @@ h1 class="h5" Find Me Online
             a href="#{account.url}" #{account.name}
   .col-sm-6
     .panel.panel-default
-      .panel-heading Work With Me
+      .panel-heading
+        h2.card-title Work With Me
       .panel-body
         - data.social.identities.professional.each do |account|
           .row
@@ -20,7 +22,8 @@ h1 class="h5" Find Me Online
 .row
   .col-sm-6
     .panel.panel-default
-      .panel-heading Watch Me
+      .panel-heading
+        h2.card-title Watch Me
       .panel-body
         - data.social.identities.academic.each do |account|
           .row
@@ -28,7 +31,8 @@ h1 class="h5" Find Me Online
             a href="#{account.url}" #{account.name}
   .col-sm-6
     .panel.panel-default
-      .panel-heading Verify Me
+      .panel-heading
+        h2.card-title Verify Me
       .panel-body
         - data.social.identities.security.each do |account|
           .row
@@ -43,7 +47,7 @@ div id="showPgpKey" class="modal fade" role="dialog"
     div class="modal-content"
       div class="modal-header"
         button type="button" class="close" data-dismiss="modal" &times;
-        h1 class="h4" PGP Public Key
+        h1.modal_title PGP Public Key
       div class="modal-body" style="text-align:left;"
         pre class="force-wrap"
           == partial "security/CE510594.asc"

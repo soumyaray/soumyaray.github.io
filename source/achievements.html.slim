@@ -1,4 +1,4 @@
-h1.h5 Awards
+h1.section_title Awards
 .row
   - awards = data.achievements.awards
   - awards.count.times do |count|
@@ -6,13 +6,13 @@ h1.h5 Awards
       div class="card"
         div class="panel panel-default"
           div class="panel-heading"
-            h2.h6
+            h2.card-title
               = awards[count].name
           div class="panel-body"
-            ul
+            ul.bullet-free
               - awards[count].instances.each do |instance|
                 li #{instance}
-h1.h5 Grants
+h1.section_title Grants
 .row
   - grants = data.achievements.grants
   - grants.count.times do |count|
@@ -20,12 +20,12 @@ h1.h5 Grants
       div class="card"
         div class="panel panel-default"
           div class="panel-heading"
-            h2.h6
+            h2.card-title
               = grants[count].name
           div class="panel-body"
-            ul
+            ul.bullet-free
               - grants[count].instances.each do |instance|
                 li 
-                  = instance.duration + ": " + instance.project
+                  span #{instance.duration} : #{instance.project}
                   br
-                  = "Grant ID: #{instance.id}"
+                  span.casual Grant ID: #{instance.id}
