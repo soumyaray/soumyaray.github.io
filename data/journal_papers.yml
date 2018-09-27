@@ -1,8 +1,31 @@
 ---
 highlights:
-  - "ISR2014"
-  - "JBR2016"
+  - ISR2014
+  - JBR2016
 papers:
+  - id: DSJ2018
+    authors:
+      - Sharma, P. N.
+      - Shmueli, G.
+      - Sarstedt, M.
+      - Danks, N.
+      - Ray, S.
+    journal: Decision Sciences
+    title: Prediction-Oriented Model Selection in Partial Least Squares Path Modeling
+    volume: forthcoming
+    year: 2018
+  - id: "ITEM2017"
+    authors:
+      - "Khansa, L."
+      - "Barkhi, R."
+      - "Ray, S."
+      - "Davis, Z."
+    journal: Information Technology and Management
+    title: "Cyberloafing in the workplace: mitigation tactics and their impact on individuals’ behavior"
+    year: 2017
+    pages: 1-19
+    ISSN: 1573-7667
+    doi: 10.1007/s10799-017-0280-1
   - id: "JMIS2017"
     authors:
       - "Kuem, J."
