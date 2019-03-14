@@ -3,6 +3,15 @@ highlights:
   - ISR2014
   - JBR2016
 papers:
+  - id: BIGDATA2019
+    authors:
+      - Greene, T.
+      - Shmueli, G.
+      - Ray, S.
+      - Fell J.
+    journal: Big Data
+    title: "Adjusting to the GDPR: The Impact on Data Scientists and Behavioral Researchers"
+    volume: forthcoming
   - id: DSJ2018
     authors:
       - Sharma, P. N.
@@ -12,7 +21,9 @@ papers:
       - Ray, S.
     journal: Decision Sciences
     title: Prediction-Oriented Model Selection in Partial Least Squares Path Modeling
-    volume: forthcoming
+    volume: 21
+    issue: 1
+    pages: 243-241
     year: 2018
   - id: "ITEM2017"
     authors:
