@@ -3,6 +3,8 @@
 source 'https://rubygems.org'
 ruby '2.4.0'
 
+gem 'rack', '>= 2.0.6'
+gem 'ffi', '>= 1.9.24'
 gem 'slim', '>= 3.0'
 
 # For faster file watcher updates on Windows:
