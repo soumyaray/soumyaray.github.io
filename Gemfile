@@ -1,7 +1,10 @@
 # If you do not have OpenSSL installed, update
 # the following line to use 'http://' instead
 source 'https://rubygems.org'
-ruby '2.4.0'
+
+# Set ruby version from file: ruby 'x.x.x'
+ruby File.read('.ruby-version').chomp
+
 
 gem 'rack', '>= 2.0.6'
 gem 'ffi', '>= 1.9.24'
@@ -15,4 +18,6 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw]
 
 # Middleman Gems
 gem 'middleman', '>= 4.0.0.rc.1'
-gem 'middleman-livereload'
+
+# LiveReload disabled pending fix of: https://github.com/middleman/middleman-livereload/issues/106
+# gem 'middleman-livereload'
