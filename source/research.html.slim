@@ -1,25 +1,30 @@
-h1.section_title Research
+/ Header and page nav
+.row
+  .col-sm-4
+    h1.section_title Research
+  .col-sm-8.anchor-menu
+    span class="align-bottom"
+      a href="#journal-papers" journals
+      span.grayed
+        = " | "
+      a href="#conference-papers" conferences
+      span.grayed
+        = " | "
+      a href="#lab" lab
 
-div class="card"
-  div class="panel panel-default"
-    div class="panel-heading"
-      h2.card-title
-        = "Publications"
-    div class="panel-body"
-      - data.journal_papers.papers.each do |paper|
-        p
-          = "#{paper.authors.join(', ')} #{paper.year}"
-          br
-          span.paper.title #{paper.title}
-          br
-          span.paper.journal #{paper.journal}
-          - if paper.volume
-            = " (#{paper.volume}"
-            = ":#{paper.issue}" if paper.issue
-            = ")"
-          - if paper.pages
-            = ", pp. #{paper.pages}"
-    div class="panel-footer"
+/ Research Card
+a class="invisible" name="journal-papers"
+.card
+  .panel.panel-default
+    .panel-heading
+      h2.card-title Journal Papers
+    .panel-body
+      = partial("partials/research_papers", locals: { papers: data.journal_papers.papers[1..2] })
+      a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"
+        = "+ #{data.journal_papers.papers.count - 2} more"
+      div class="collapse" id="collapseExample"
+        = partial("partials/research_papers", locals: { papers: data.journal_papers.papers[3..] })
+    .panel-footer
       .row
         .col-xs-6
           i class="ai ai-google-scholar" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
@@ -27,13 +32,33 @@ div class="card"
         .col-xs-6 style="text-align:right;"
           i class="ai ai-researchgate" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
           a href="https://www.researchgate.net/profile/Soumya_Ray5" ResearchGate Profile
-      
-div class="card"
-  div class="panel panel-default"
-    div class="panel-heading"
+
+/ Conference Card
+a class="invisible" name="conference-papers"
+.card
+  .panel.panel-default
+    .panel-heading
+      h2.card-title
+        = "Notable Conference Proceedings"
+    .panel-body
+      = partial("partials/research_papers", locals: { papers: data.conference_papers.papers })
+    .panel-footer
+      .row
+        .col-xs-6
+          i class="ai ai-google-scholar" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
+          a href="https://scholar.google.com/citations?user=6WjiSOwAAAAJ" Google Scholar Profile
+        .col-xs-6 style="text-align:right;"
+          i class="ai ai-researchgate" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
+          a href="https://www.researchgate.net/profile/Soumya_Ray5" ResearchGate Profile
+
+/ Lab Card  
+a class="invisible" name="lab"
+.card
+  .panel.panel-default
+    .panel-heading
       h2.card-title
         = "Research Lab"
-    div class="panel-body"
+    .panel-body
       .row
         .col-md-6
           span RayLab (雷門) attracts students from many backgrounds:
@@ -44,8 +69,8 @@ div class="card"
         .col-md-6
           div style="width:329px;height:247px;overflow:hidden"
             iframe style="position:relative;left:-21px;top:-2px;" src="https://docs.google.com/presentation/d/1Y56N5yxcAKBzGqdljgC68OQnXKJ9lRHdunujXK35d3k/embed?start=true&loop=true&delayms=3000" frameborder="0" width="380" height="285" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"
-    div class="panel-footer"
+    .panel-footer 
       .row
         .col-xs-6
         .col-xs-6 style="text-align:right"
-          a href="https://docs.google.com/presentation/d/1Y56N5yxcAKBzGqdljgC68OQnXKJ9lRHdunujXK35d3k/edit" See Student Profiles
+          a href="https://docs.google.com/presentation/d/1Y56N5yxcAKBzGqdljgC68OQnXKJ9lRHdunujXK35d3k/edit" Student Profiles

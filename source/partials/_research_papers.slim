@@ -1,0 +1,19 @@
+- papers.each do |paper|
+  p
+    = "#{paper.authors.join(', ')} #{paper.year}"
+    br
+    span.paper.title #{paper.title}
+    br
+    - if paper.journal
+      span.paper.journal #{paper.journal}
+      - if paper.volume
+        = " (#{paper.volume}"
+        = ":#{paper.issue}" if paper.issue
+        = ")"
+      - if paper.pages
+        = ", pp. #{paper.pages}"
+    - elsif paper.conference
+      span.paper.conference 
+            = "in proceedings of #{paper.conference}"
+            - if paper.location
+              = " – (#{paper.location})"

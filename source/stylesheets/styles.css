@@ -41,6 +41,23 @@
     width: 100px;
   }
 
+  .outline {
+    border: 1px solid red;
+  }
+  
+  .grayed {
+    color:lightgray
+  }
+
+  .anchor-menu {
+    padding: 20px 0 0 0;
+    text-align: right;
+  }
+
+  .anchor-destination {
+    text-decoration: none;
+  }
+
   .sidebar-nav .navbar .navbar-collapse {
     padding: 0;
     max-height: none;
@@ -87,6 +104,11 @@
 }
 
 .paper.journal {
+  font-style: italic;
+  display: inline-block;
+}
+
+.paper.conference {
   font-style: italic;
   display: inline-block;
 }
