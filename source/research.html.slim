@@ -19,7 +19,7 @@ a class="invisible" name="journal-papers"
     .panel-heading
       h2.card-title Journal Papers
     .panel-body
-      = partial("partials/research_papers", locals: { papers: data.journal_papers.papers[1..2] })
+      = partial("partials/research_papers", locals: { papers: data.journal_papers.papers[0..2] })
       a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"
         = "+ #{data.journal_papers.papers.count - 2} more"
       div class="collapse" id="collapseExample"
