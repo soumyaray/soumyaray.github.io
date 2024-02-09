@@ -1,14 +1,11 @@
-# If you do not have OpenSSL installed, update
-# the following line to use 'http://' instead
-source 'https://rubygems.org'
-
-# Set ruby version from file: ruby 'x.x.x'
+source 'https://rubygems.org' # use 'http://' if OpenSSL not installed
 ruby File.read('.ruby-version').chomp
 
 gem 'rack', '>= 2.0.6'
 gem 'ffi', '>= 1.9.24'
-gem 'slim', '>= 3.0'
+gem 'slim', '~> 4.0' # tilt:activeview error with slim 5
 
+# For common CLI tasks
 gem 'rake'
 
 # For faster file watcher updates on Windows:
@@ -19,6 +16,4 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw]
 
 # Middleman Gems
 gem 'middleman', '~> 4.4.3'
-
-# LiveReload disabled pending fix of: https://github.com/middleman/middleman-livereload/issues/106
-# gem 'middleman-livereload'
+gem 'middleman-livereload', '~> 3.4.6' # (see config.rb)
