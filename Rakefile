@@ -1,11 +1,11 @@
 desc 'Build the site master into build folder'
 task :build do
-  sh 'middleman build'
+  sh 'bundle exec middleman build'
 end
 
 desc 'Serve the site locally'
 task :serve do
-  sh 'middleman serve'
+  sh 'bundle exec middleman serve'
 end
 
 namespace :images do
