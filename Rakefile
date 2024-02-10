@@ -8,6 +8,8 @@ task :serve do
   sh 'bundle exec middleman serve'
 end
 
+# Image tasks
+# (requires ImageMagick to be installed: e.g., brew install imagemagick)
 namespace :images do
   namespace :convert do
     def change_file_suffix(filename, suffix)
