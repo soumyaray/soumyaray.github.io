@@ -17,3 +17,8 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw]
 # Middleman Gems
 gem 'middleman', '~> 4.4.3'
 gem 'middleman-livereload', '~> 3.4.6' # (see config.rb)
+
+# Former stdlib gems still required by rack 2.2 / tilt 2.0 (warnings on Ruby 4)
+gem 'csv'
+gem 'ostruct'
+gem 'rdoc'
