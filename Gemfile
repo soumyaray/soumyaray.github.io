@@ -3,22 +3,16 @@ ruby File.read('.ruby-version').chomp
 
 gem 'rack', '>= 2.0.6'
 gem 'ffi', '>= 1.9.24'
-gem 'slim', '~> 4.0' # tilt:activeview error with slim 5
+gem 'slim', '~> 5.2'
 
 # For common CLI tasks
 gem 'rake'
 
 # For faster file watcher updates on Windows:
-gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
+gem 'wdm', '~> 0.1.0', platforms: :windows
 
 # windows does not come with time zone data
-gem 'tzinfo-data', platforms: [:mswin, :mingw]
+gem 'tzinfo-data', platforms: :windows
 
 # Middleman Gems
-gem 'middleman', '~> 4.4.3'
-gem 'middleman-livereload', '~> 3.4.6' # (see config.rb)
-
-# Former stdlib gems still required by rack 2.2 / tilt 2.0 (warnings on Ruby 4)
-gem 'csv'
-gem 'ostruct'
-gem 'rdoc'
+gem 'middleman', '~> 4.6'

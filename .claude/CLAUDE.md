@@ -4,13 +4,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-Personal academic website for soumyaray.com, a static site built with Middleman 4 (Slim templates, YAML data files) and hosted on GitHub Pages from the `soumyaray/soumyaray.github.io` repo. Ruby version comes from `.ruby-version` (the Gemfile reads it). middleman-core 4.4.x requires Bundler `~> 2.0`, so the lockfile pins Bundler 2.7.2. Ruby 4's default Bundler 4 cannot resolve this bundle, so use `bundle _2.7.2_ …` if the automatic version switch does not happen.
+Personal academic website for soumyaray.com, a static site built with Middleman 4 (Slim templates, YAML data files) and hosted on GitHub Pages from the `soumyaray/soumyaray.github.io` repo. Ruby version comes from `.ruby-version` (the Gemfile reads it).
 
 ## Commands
 
 ```bash
 bundle install
-bundle exec rake serve      # middleman serve with livereload (http://localhost:4567)
+bundle exec rake serve      # middleman serve (http://localhost:4567); no livereload, refresh manually
 bundle exec rake build      # middleman build → ./build (CSS/JS minified)
 bundle exec rake images:convert:thumbnail   # *_original.png → *_thumb.png (200px wide)
 bundle exec rake images:convert:modal       # *_original.png → *_modal.png (568px wide)
@@ -53,7 +53,7 @@ The `master` branch in this outer checkout is stale (years behind); the up-to-da
   - The commented template at the top of each YAML file shows the expected fields; `partials/_research_papers.slim` shows which paper fields render.
 - Figures: `partials/_img_thumb_modal.slim` expects `source/images/<papers|courses>/<id>/<img>_thumb.png` and `<img>_modal.png`, where `<id>` matches the YAML entry's `id` and `<img>` is `figure` or `overview`. Add the new `<img>_original.png` and run the two `images:convert` tasks to make the sizes.
 - `source/partials/*.md` partials are Markdown (e.g. current position text on the home page).
-- `config.rb`: layout-free `.xml/.json/.txt`, livereload in development, CSS/JS minification on build. `config.ru` lets the site run under Rack, but the normal path is `rake serve`.
+- `config.rb`: layout-free `.xml/.json/.txt`, CSS/JS minification on build. middleman-livereload was dropped because it caps Rack below 3.2.
 
 ## Plans
 
