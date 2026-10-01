@@ -11,6 +11,11 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+# Source-only images: full-size originals and unused files stay in the repo
+# but are not copied into the build (pages use only *_thumb/*_modal images)
+ignore 'images/**/*_original.*'
+ignore 'images/research/**'
+
 # With alternative layout
 # page '/path/to/file.html', layout: :otherlayout
 
