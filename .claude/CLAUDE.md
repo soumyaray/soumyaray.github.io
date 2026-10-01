@@ -36,13 +36,13 @@ The `master` branch in this outer checkout is stale (years behind); the up-to-da
 
 `source/CNAME` and `source/.nojekyll` are copied into the build so Pages keeps the custom domain and skips Jekyll.
 
-## Content lives outside git
+## Content and images
 
-`.gitignore` on `source` excludes **`/data`** and **`/source/images`**. The YAML content and all images are not version-controlled on `source`; they exist only in this local folder (Dropbox-synced) and, in rendered form, in the built `master`. Consequences:
+`data/` (YAML content) and `source/images/` are tracked on `source`. Content edits show up in `git diff` on `source` and, after a rebuild, as changed HTML in `build/`. Commit messages with a `data:` prefix cover content changes.
 
-- Content edits (papers, courses, awards, etc.) show up in git only as changed HTML in `build/` after a rebuild. Do not expect `git diff` on `source` to show them.
-- A fresh clone or a new worktree of `source` cannot build without copying/linking `data/` and `source/images/` in.
-- Commit messages on `source` with a `data:` prefix cover hardcoded content that *is* tracked (e.g. `source/partials/_current_position.md`, `source/downloads/SoumyaRay-CV.pdf`).
+Images are stored once in the repo: git shares a blob across branches, so an image on both `source` and `master` costs nothing extra.
+
+`config.rb` keeps source-only images out of the build with `ignore`: every `*_original.*` file and `images/research/**`. Pages use only `*_thumb.png`, `*_modal.png`, `ray-mangaface-sm.png`, and `software/*/logo.png`. If a page starts to reference an ignored file, change the `ignore` rules.
 
 ## Architecture
 

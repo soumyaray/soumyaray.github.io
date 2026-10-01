@@ -1,0 +1,234 @@
+---
+highlights:
+  - MS2024
+  - IM2023
+papers:
+  # - id:
+  #   authors:
+  #   year:
+  #   title:
+  #   journal:
+  #   volume:
+  #   issue:
+  #   pages:
+  - id: MS2024-2
+    authors: 
+      - Fišar, M. 
+      - Greiner, B. 
+      - Huber, C. 
+      - Katok, E. 
+      - Ozkes, A.
+      - the Management Science Reproducibility Collaboration* 
+    year: (forthcoming)
+    title: "Reproducibility in Management Science"
+    journal: Management Science
+    volume: "note: member of the Management Science Reproducibility Collaboration"
+  - id: JAIS2024
+    authors: 
+      - Shmueli, G.
+      - Ray, S.
+    year: 2024
+    title: "Reimagining the Journal Editorial Process: An AI-Augmented Versus an AI-Driven Future"
+    journal: Journal of the Association for Information Systems
+    volume: 25
+    issue: 1
+    pages: 60-75
+  - id: MS2024
+    authors: 
+      - Danks, N.P. 
+      - Ray, S.
+      - Shmueli, G.
+    year: 2024
+    title: "The Composite Overfit Analysis Framework: Assessing the Out-of-sample Generalizability of Construct-based Models Using Predictive Deviance, Deviance Trees, and Unstable Paths"
+    journal: Management Science
+    volume: 70
+    issue: 1
+    pages: 647-669
+    abstract: >
+      Construct-based models (e.g., PLS path modeling and CBSEM) have become a mainstay of management research. 
+      However, these models are likely overfit to the data samples upon which they are estimated. 
+      We propose a composite overfit analysis (COA) framework that applies predictive tools to describe the sources and ramifications of overfit in terms of the focal concepts important to empirical researchers.
+      The framework employs a novel deviance tree method to group deviant cases that have similar predictive deviance and for similar theoretical reasons.
+  - id: IM2023
+    authors: 
+      - Cano Bejar, A.H.
+      - Ray, S.
+      - Huang, Y.H. 
+    year: 2023
+    title: "Fighting for the Status Quo: Threat to Tech Self-Esteem and Opposition to Competing Smartphones"
+    journal: Information & Management
+    volume: 60
+    issue: 2
+    abstract: >
+      Users of rival technology platforms, such as Android-versus-iOS, often harbor hostile opposition to each other. We conducted an empirical study of
+      smartphone users, where we find that the threat to technology self-esteem arises from distinct antecedents and
+      offers a singular explanation for opposition. Moreover, we show the unintended consequences of employing lock-
+      in strategies and provide advice on why and how to mitigate them.
+  - id: JAIS2023
+    authors: 
+      - Greene, T.
+      - Shmueli, G.
+      - Ray, S.
+    year: 2023
+    title: "Taking the Person Seriously: Ethically-aware IS Research in the Era of Reinforcement Learning-based Personalization"
+    journal: Journal of the Association of Information Systems
+    volume: 24
+    issue: 6
+    pages: 1527-1561
+  - id: ISF2021
+    authors: 
+      - Kuem, J. 
+      - Ray, S.
+    year: 2021
+    title: "Personality Antecedents and Consequences of Internet Addiction Vis-à-vis Internet Habit: a Theory and an Empirical Investigation"
+    journal: Information Systems Frontiers
+    pages: 1-16
+  - id: EJIS2020
+    authors:
+    - Kuem, J. 
+    - Ray, S. 
+    - Hsu, P.
+    - Khansa, L.
+    year: 2020
+    title: "Smartphone Addiction and Conflict: An Incentive-Sensitization Perspective of Addiction for Information Systems"
+    journal: European Journal of Information Systems
+    pages: 1-22
+  - id: IMDS2020
+    authors:
+      - Shiau, W.-L.
+      - Yuan, Y.
+      - Pu, X.
+      - Ray, S.
+      - Chen, C.C.
+    year: 2020
+    title: "Understanding fintech continuance: perspectives from self-efficacy and ECT-IS theories"
+    journal: Industrial Management & Data Systems
+    volume: 12
+    issue: 9
+    pages: 1659-1689
+  - id: CHB2019
+    authors:
+      - Seo, D.
+      - Ray, S.
+    year: 2019
+    journal: Computers in Human Behavior
+    title: "Habit and Addiction in the Use of Social Networking Sites:  Their Nature, Antecedents, and Consequences"
+    volume: 99
+    pages: 109-125
+  - id: BIGDATA2019
+    authors:
+      - Greene, T.
+      - Shmueli, G.
+      - Ray, S.
+      - Fell J.
+    year: 2019
+    journal: Big Data
+    title: "Adjusting to the GDPR: The Impact on Data Scientists and Behavioral Researchers"
+    volume: 7
+    issue: 3
+    pages: 140-162
+  - id: DSJ2018
+    authors:
+      - Sharma, P. N.
+      - Shmueli, G.
+      - Sarstedt, M.
+      - Danks, N.
+      - Ray, S.
+    journal: Decision Sciences
+    title: Prediction-Oriented Model Selection in Partial Least Squares Path Modeling
+    volume: 21
+    issue: 1
+    pages: 243-241
+    year: 2018
+  - id: "ITEM2017"
+    authors:
+      - "Khansa, L."
+      - "Barkhi, R."
+      - "Ray, S."
+      - "Davis, Z."
+    journal: Information Technology and Management
+    title: "Cyberloafing in the workplace: mitigation tactics and their impact on individuals’ behavior"
+    year: 2017
+    pages: 1-19
+    ISSN: 1573-7667
+    doi: 10.1007/s10799-017-0280-1
+  - id: "JMIS2017"
+    authors:
+      - "Kuem, J."
+      - "Ray, S."
+      - "Siponen, M."
+      - "Kim, S. S."
+    journal: "Journal of Management Information Systems"
+    title: "What Leads to Prosocial Behaviors on Social Networking Services: A Tripartite Model"
+    volume: 34
+    issue: 1
+    pages: 40-70
+    year: 2017
+    abstract: "This study offers three distinct mechanisms that regulate how one’s experience at an SNS translates into commitment that leads to prosocial behavior"
+  - id: "JBR2016"
+    authors:
+      - "Shmueli, G."
+      - "Ray, S."
+      - "Estrada, J. M. V."
+      - "Chatla, S. B."
+    journal: "Journal of Business Research"
+    title: "The Elephant in the Room: Predictive Performance of PLS Models"
+    volume: 69
+    pages: 4552–4564
+    year: 2016
+    abstract: "An outline of how predictive PLS methodology can strengthen theory-building research, with software tools to implement it."
+  - id: "ISR2014"
+    authors:
+      - "Ray, S."
+      - "Kim, S.S."
+      - "Morris, J.G."
+    issue: 3
+    journal: "Information Systems Research"
+    pages: 528-546
+    title: "The Central Role of Engagement in Online Communities"
+    volume: 25
+    year: 2014
+    abstract: "A framework that demonstrates what engagement is, where it comes from, and how it powerfully explains knowledge contribution and word of mouth."
+  - id: "IJIM2014"
+    authors:
+      - "Hsu, P."
+      - "Ray, S."
+      - "Li-Hsieh, Y."
+    issue: 4
+    journal: "International Journal of Information Management"
+    pages: 474-488
+    title: "Examining Cloud Computing Adoption Intention, Pricing Mechanism, and Deployment Model"
+    volume: 34
+    year: 2014
+  - id: "IM2013"
+    authors:
+      - "Ray, S."
+      - "Seo, D."
+    issue: 7
+    journal: "Information & Management"
+    pages: 523-539
+    title: "The interplay of conscious and automatic mechanisms in the context of routine use: An integrative and comparative study of contrasting mechanisms"
+    volume: 50
+    year: 2013
+  - id: "ISR2012"
+    authors:
+      - "Ray, S."
+      - "Kim, S.S."
+      - "Morris, J.G."
+    issue: 1
+    journal: "Information Systems Research"
+    pages: 197-213
+    title: "Research Note - Online Users' Switching Costs: Their Nature and Formation"
+    volume: 23
+    year: 2012
+  - id: "DS2011"
+    authors:
+      - "Ray, S."
+      - "Ow, T."
+      - "Kim, S.S."
+    issue: 2
+    journal: "Decision Sciences"
+    pages: 391-412
+    title: "Security Assurance: How Online Service Providers Can Influence Security Control Perceptions and Gain Trust"
+    volume: 42
+    year: 2011
