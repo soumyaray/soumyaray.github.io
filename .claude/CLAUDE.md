@@ -46,7 +46,9 @@ Images are stored once in the repo: git shares a blob across branches, so an ima
 
 ## Architecture
 
-- `source/layouts/layout.slim`: single layout — Bootstrap 3.3.6 (Bootswatch "paper"), Font Awesome 4.6.3 and jQuery 1.12.4 from CDNs with SRI hashes (use `rake url:integrity` when changing a CDN URL), Cookiebot consent script, a left sidebar (`partials/_side_menu.slim`), and page content on the right.
+- `source/layouts/layout.slim`: single layout — Bootstrap 5.3.8 (Bootswatch "materia"), Font Awesome 7 and Academicons from jsDelivr with SRI hashes (use `rake url:integrity` when changing a CDN URL), no jQuery, Cookiebot consent script, a left sidebar (`partials/_side_menu.slim`), and page content on the right.
+- `stylesheets/styles.css` loads *before* Bootstrap, so rules that must beat Bootstrap are prefixed with `#bootstrap-override` (the body id). The section at the end keeps the look of the old Bootstrap 3 Paper theme.
+- Icons: Font Awesome 7 classes (`fa-solid fa-…`, `fa-brands fa-…`), also used for `icon:` in `data/social.yml`. Brand icons that ad-blockers hide use `fa-brands my-fa-…` from `social_adblock_workaround.css`.
 - Top-level pages are `source/*.html.slim` (index, research, service, software, courses, achievements, social). Each renders from a matching file in `data/` through Middleman's `data.<file>` accessor:
   - `journal_papers.yml` (`highlights:` list of paper ids + `papers:`), `conference_papers.yml` → `research`, and `index` (shows the first two highlighted papers)
   - `instruction.yml` → `courses` and `index`; `achievements.yml`, `service.yml`, `software.yml`, `social.yml` → their pages (`social` also feeds `partials/social/_contact_me.slim`)
