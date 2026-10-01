@@ -2,21 +2,20 @@ h1.section_title Software Packages
 
 - data.software.packages.each do |package|
   div class="card"
-    div class="panel panel-default"
-      div class="panel-heading"
-        h2.card-title #{package.name}
-      div class="panel-body"
-        .row
-          .col-md-12
-            - if package.logo
-              img.right.small src="images/software/#{package.id}/logo.png"
-            = package.description
-      div class="panel-footer"
-        .row
-          - [["Homepage", "fa-home", package.home_url],
-             ["Source Code", "fa-github", package.git_url],
-             ["Manual", "fa-book", package.manual]].each do |name, icon, data|
-            - if data
-              .col-xs-4
-                i class="fa #{icon}" aria-hidden="true" style="margin-right:5px"
-                a href="#{data}" #{name}
+    div class="card-header"
+      h2.card-title #{package.name}
+    div class="card-body"
+      .row
+        .col-md-12
+          - if package.logo
+            img.right.small src="images/software/#{package.id}/logo.png"
+          = package.description
+    div class="card-footer"
+      .row
+        - [["Homepage", "fa-solid fa-house", package.home_url],
+           ["Source Code", "fa-brands fa-github", package.git_url],
+           ["Manual", "fa-solid fa-book", package.manual]].each do |name, icon, data|
+          - if data
+            .col-4
+              i class="#{icon}" aria-hidden="true" style="margin-right:5px"
+              a href="#{data}" #{name}

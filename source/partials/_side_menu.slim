@@ -1,31 +1,28 @@
 div class="sidebar-nav"
-  div class="navbar navbar-default" role="navigation"
+  nav class="navbar navbar-expand-sm" role="navigation"
     div class="navbar-header"
-      button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse"
-        span class="sr-only" Toggle navigation
-        span class="icon-bar"
-        span class="icon-bar"
-        span class="icon-bar"
       a href="/" style="z-index:100;"
         div class="brand_and_logo"
           span id="bootstrap-override" class="navbar-brand brandwidth brandname"
             == "Soumya Ray"
-          img class="img-fluid img-circle logo" id="ray_manga" style="text-align:center; max-width: 150px; height:auto;" src="images/ray-mangaface-sm.png" alt="Soumya Ray"
+          img class="img-fluid rounded-circle logo" id="ray_manga" style="text-align:center; max-width: 150px; height:auto;" src="images/ray-mangaface-sm.png" alt="Soumya Ray"
+      button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".sidebar-navbar-collapse" aria-label="Toggle navigation"
+        span class="navbar-toggler-icon"
     div class="navbar-collapse collapse sidebar-navbar-collapse"
-      ul class="nav navbar-nav"
-        li class="menu_item"
-          a href="/" &nbsp
-        li class="menu_item"
-          a href="/research.html" Research
-        li class="menu_item"
-          a href="/service.html" Service
-        li class="menu_item"
-          a href="/software.html" Software
-        li class="menu_item"
-          a href="/courses.html" Courses
-        li class="menu_item"
-          a href="/achievements.html" Achievements
-        li class="menu_item"
-          a href="/social.html" Find me online
-        footer
-          == partial "partials/footer.html.slim"
+      ul class="navbar-nav"
+        li class="nav-item menu_item"
+          a class="nav-link" href="/" &nbsp
+        li class="nav-item menu_item"
+          a class="nav-link" href="/research.html" Research
+        li class="nav-item menu_item"
+          a class="nav-link" href="/service.html" Service
+        li class="nav-item menu_item"
+          a class="nav-link" href="/software.html" Software
+        li class="nav-item menu_item"
+          a class="nav-link" href="/courses.html" Courses
+        li class="nav-item menu_item"
+          a class="nav-link" href="/achievements.html" Achievements
+        li class="nav-item menu_item"
+          a class="nav-link" href="/social.html" Find me online
+      footer
+        == partial "partials/footer.html.slim"

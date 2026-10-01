@@ -15,62 +15,59 @@
 / Research Card
 a class="invisible" name="journal-papers"
 .card
-  .panel.panel-default
-    .panel-heading
-      h2.card-title Journal Papers
-    .panel-body
-      = partial("partials/research_papers", locals: { papers: data.journal_papers.papers[0..2] })
-      a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"
-        = "+ #{data.journal_papers.papers.count - 2} more"
-      div class="collapse" id="collapseExample"
-        = partial("partials/research_papers", locals: { papers: data.journal_papers.papers[3..] })
-    .panel-footer
-      .row
-        .col-xs-6
-          i class="ai ai-google-scholar" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
-          a href="https://scholar.google.com/citations?user=6WjiSOwAAAAJ" Google Scholar Profile
-        .col-xs-6 style="text-align:right;"
-          i class="ai ai-researchgate" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
-          a href="https://www.researchgate.net/profile/Soumya_Ray5" ResearchGate Profile
+  .card-header
+    h2.card-title Journal Papers
+  .card-body
+    = partial("partials/research_papers", locals: { papers: data.journal_papers.papers[0..2] })
+    a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"
+      = "+ #{data.journal_papers.papers.count - 2} more"
+    div class="collapse" id="collapseExample"
+      = partial("partials/research_papers", locals: { papers: data.journal_papers.papers[3..] })
+  .card-footer
+    .row
+      .col-6
+        i class="ai ai-google-scholar" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
+        a href="https://scholar.google.com/citations?user=6WjiSOwAAAAJ" Google Scholar Profile
+      .col-6 style="text-align:right;"
+        i class="ai ai-researchgate" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
+        a href="https://www.researchgate.net/profile/Soumya_Ray5" ResearchGate Profile
 
 / Conference Card
 a class="invisible" name="conference-papers"
 .card
-  .panel.panel-default
-    .panel-heading
-      h2.card-title
-        = "Notable Conference Proceedings"
-    .panel-body
-      = partial("partials/research_papers", locals: { papers: data.conference_papers.papers })
-    .panel-footer
-      .row
-        .col-xs-6
-          i class="ai ai-google-scholar" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
-          a href="https://scholar.google.com/citations?user=6WjiSOwAAAAJ" Google Scholar Profile
-        .col-xs-6 style="text-align:right;"
-          i class="ai ai-researchgate" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
-          a href="https://www.researchgate.net/profile/Soumya_Ray5" ResearchGate Profile
+  .card-header
+    h2.card-title
+      = "Notable Conference Proceedings"
+  .card-body
+    = partial("partials/research_papers", locals: { papers: data.conference_papers.papers })
+  .card-footer
+    .row
+      .col-6
+        i class="ai ai-google-scholar" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
+        a href="https://scholar.google.com/citations?user=6WjiSOwAAAAJ" Google Scholar Profile
+      .col-6 style="text-align:right;"
+        i class="ai ai-researchgate" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
+        a href="https://www.researchgate.net/profile/Soumya_Ray5" ResearchGate Profile
 
 / Lab Card  
 a class="invisible" name="lab"
 .card
-  .panel.panel-default
-    .panel-heading
-      h2.card-title
-        = "Research Lab"
-    .panel-body
-      .row
-        .col-md-6
-          span RayLab (雷門) attracts students from many backgrounds:
-          ul.bullet-free.casual
-            li MIS/CS: students with coding/analytics abilities
-            li Management: students with IT technology interests
-            li Design: students with IT service interests
-        .col-md-6
-          div style="width:329px;height:247px;overflow:hidden"
-            iframe style="position:relative;left:-21px;top:-2px;" src="https://docs.google.com/presentation/d/1Y56N5yxcAKBzGqdljgC68OQnXKJ9lRHdunujXK35d3k/embed?start=true&loop=true&delayms=3000" frameborder="0" width="380" height="285" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"
-    .panel-footer 
-      .row
-        .col-xs-6
-        .col-xs-6 style="text-align:right"
-          a href="https://docs.google.com/presentation/d/1Y56N5yxcAKBzGqdljgC68OQnXKJ9lRHdunujXK35d3k/edit" Student Profiles
+  .card-header
+    h2.card-title
+      = "Research Lab"
+  .card-body
+    .row
+      .col-md-6
+        span RayLab (雷門) attracts students from many backgrounds:
+        ul.bullet-free.casual
+          li MIS/CS: students with coding/analytics abilities
+          li Management: students with IT technology interests
+          li Design: students with IT service interests
+      .col-md-6
+        div style="width:329px;height:247px;overflow:hidden"
+          iframe style="position:relative;left:-21px;top:-2px;" src="https://docs.google.com/presentation/d/1Y56N5yxcAKBzGqdljgC68OQnXKJ9lRHdunujXK35d3k/embed?start=true&loop=true&delayms=3000" frameborder="0" width="380" height="285" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"
+  .card-footer 
+    .row
+      .col-6
+      .col-6 style="text-align:right"
+        a href="https://docs.google.com/presentation/d/1Y56N5yxcAKBzGqdljgC68OQnXKJ9lRHdunujXK35d3k/edit" Student Profiles

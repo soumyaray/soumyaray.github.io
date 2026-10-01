@@ -12,11 +12,11 @@ span style="display: inline-block;"
   h2 class="h5"
     = "Current Events"
 .row
-  .col-xs-12
-    div class="panel panel-primary"
-      div class="panel-body"
+  .col-12
+    div class="card"
+      div class="card-body"
         .row
-          .col-xs-12
+          .col-12
             p
               span Keynote Speech: 
               i Programmatic Approaches to Structural Equation Modeling
@@ -40,11 +40,11 @@ span style="display: inline-block; margin-left:10px"
 - highlights = pubs.papers.select { |p| pubs.highlights.include? p.id }
 - highlights.first(2).each do |paper|
   .row
-    .col-xs-12
-      div class="panel panel-primary"
-        div class="panel-body"
+    .col-12
+      div class="card"
+        div class="card-body"
           .row
-            .col-xs-12
+            .col-12
               = partial("partials/img_thumb_modal", locals: {dir: 'images/papers', id: paper.id, img: 'figure'})
               span.paper.title #{paper.title}
               br
@@ -63,14 +63,14 @@ span style="display: inline-block; margin-left:10px"
   - highlights = instr.courses.select { |c| instr.highlights.include? c.id }
   - highlights.first(2).each do |course|
     .col-md-6
-      div class="panel panel-primary"
-        div class="panel-body"
+      div class="card"
+        div class="card-body"
           .row
-            .col-xs-12
+            .col-12
               span.class.title #{course.name}
               br
           .row
-            .col-xs-6
+            .col-6
               span #{course.short_description}
-            .col-xs-6
+            .col-6
               = partial("partials/img_thumb_modal", locals: {dir: 'images/courses', id: course.id, img: 'figure'})

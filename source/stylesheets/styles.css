@@ -58,21 +58,17 @@
     text-decoration: none;
   }
 
+  .sidebar-nav .navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
   .sidebar-nav .navbar .navbar-collapse {
-    padding: 0;
-    max-height: none;
+    flex-direction: column;
     padding-top: 12px;
     padding-bottom: 12px;
   }
-  .sidebar-nav .navbar ul {
-    float: none;
-  }
-  .sidebar-nav .navbar ul:not {
-    display: block;
-  }
-  .sidebar-nav .navbar li {
-    float: none;
-    display: block;
+  .sidebar-nav .navbar .navbar-nav {
+    flex-direction: column;
   }
   .sidebar-nav .navbar li a {
     padding-top: 12px;
@@ -140,7 +136,25 @@ body#bootstrap-override {
   background-color: #f3f3f3;
   color:rgb(90, 90, 90);
   font-weight:400;
-  font-size: 1.4em
+  font-size: 14px
+}
+
+/* Sidebar menu: white box with a shadow, like the Bootstrap 3 Paper navbar */
+.sidebar-nav .navbar {
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+ul.footer {
+  list-style: none;
+  padding: 0;
+}
+
+.card {
+  margin-bottom: 20px;
 }
 
 h1.section_title {
@@ -336,4 +350,105 @@ footer {
     font-size:12pt;
     color:#444;
   }
+}
+
+/* Bootstrap 5 (Bootswatch Materia) overrides to keep the look of the old
+   Bootstrap 3 Paper theme. This file loads before Bootstrap, so these rules
+   use the body id to win on specificity. */
+body#bootstrap-override {
+  line-height: 1.846;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#bootstrap-override a {
+  text-decoration: none;
+}
+
+#bootstrap-override a:hover,
+#bootstrap-override a:focus {
+  text-decoration: underline;
+}
+
+#bootstrap-override h1,
+#bootstrap-override h2,
+#bootstrap-override h3,
+#bootstrap-override h4,
+#bootstrap-override h5,
+#bootstrap-override h6 {
+  font-weight: 400;
+  color: #444;
+  line-height: 1.1;
+}
+
+#bootstrap-override h1.section_title {
+  font-weight: 500;
+  margin: 23px 0 11.5px;
+}
+
+#bootstrap-override h2.card-title {
+  margin: 23px 0 11.5px;
+}
+
+#bootstrap-override .card {
+  --bs-card-color: rgb(90, 90, 90);
+  --bs-card-border-radius: 2px;
+  --bs-card-inner-border-radius: 2px;
+}
+
+/* Sidebar menu */
+#bootstrap-override .sidebar-nav .navbar {
+  margin-bottom: 23px;
+  border-radius: 2px;
+}
+
+#bootstrap-override .navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+#bootstrap-override .navbar-header > a {
+  flex: 1;
+  color: #666;
+}
+
+#bootstrap-override .navbar-header > a:hover {
+  text-decoration: none;
+  color: #212121;
+}
+
+#bootstrap-override .brandname {
+  display: block;
+  line-height: 20px;
+  padding-bottom: 21px;
+  color: inherit;
+  margin-right: 0;
+}
+
+#bootstrap-override .navbar-toggler {
+  border: none;
+  box-shadow: none;
+  margin-top: 15px;
+  padding: 4px 6px;
+}
+
+/* Flex items do not collapse margins like the old block list did */
+#bootstrap-override .sidebar-nav .navbar-nav .nav-item {
+  margin: 3.75px 0;
+}
+
+#bootstrap-override .sidebar-nav .navbar-nav .nav-link {
+  color: #666;
+  line-height: 23px;
+}
+
+#bootstrap-override .sidebar-nav .navbar-nav .nav-link:hover {
+  color: #212121;
+  text-decoration: none;
+}
+
+#bootstrap-override .modal-header {
+  border-bottom: none;
 }

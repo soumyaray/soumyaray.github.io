@@ -2,54 +2,54 @@ h1.section_title Find Me Online
 
 .row
   .col-sm-6
-    .panel.panel-default
-      .panel-heading
+    .card
+      .card-header
         h2.card-title Contact Me
-      .panel-body
+      .card-body
         - data.social.identities.contact.each do |account|
-          .row
+          .contact
             i class="#{account.icon}" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
             a href="#{account.url}" #{account.name}
   .col-sm-6
-    .panel.panel-default
-      .panel-heading
+    .card
+      .card-header
         h2.card-title Work With Me
-      .panel-body
+      .card-body
         - data.social.identities.professional.each do |account|
-          .row
+          .contact
             i class="#{account.icon}" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
             a href="#{account.url}" #{account.name}
 .row
   .col-sm-6
-    .panel.panel-default
-      .panel-heading
+    .card
+      .card-header
         h2.card-title Read Me
-      .panel-body
+      .card-body
         - data.social.identities.academic.each do |account|
-          .row
+          .contact
             i class="#{account.icon}" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
             a href="#{account.url}" #{account.name}
   .col-sm-6
-    .panel.panel-default
-      .panel-heading
+    .card
+      .card-header
         h2.card-title Verify Me
-      .panel-body
+      .card-body
         - data.social.identities.security.each do |account|
-          .row
+          .contact
             i class="#{account.icon}" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
             a href="#{account.url}" #{account.name}
-        .row
-          i class="fa fa-key" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
-          a hef="" data-toggle="modal" data-target="#showPgpKey" style="cursor: pointer;" PGP Public Key
+        .contact
+          i class="fa-solid fa-key" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
+          a href="#" data-bs-toggle="modal" data-bs-target="#showPgpKey" PGP Public Key
 
-div id="showPgpKey" class="modal fade" role="dialog"
+div id="showPgpKey" class="modal fade" tabindex="-1"
   div class="modal-dialog"
     div class="modal-content"
       div class="modal-header"
-        button type="button" class="close" data-dismiss="modal" &times;
-        h1.modal_title PGP Public Key
+        h1.modal_title.modal-title PGP Public Key
+        button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
       div class="modal-body" style="text-align:left;"
         pre class="force-wrap"
           == partial "security/CE510594.asc"
       div class="modal-footer"
-        button type="button" class="btn btn-default" data-dismiss="modal" Close
+        button type="button" class="btn btn-secondary" data-bs-dismiss="modal" Close
