@@ -452,3 +452,8 @@ body#bootstrap-override {
 #bootstrap-override .modal-header {
   border-bottom: none;
 }
+
+/* Bootstrap 3 modals were 600px wide; Bootstrap 5 defaults to 500px */
+#bootstrap-override .modal {
+  --bs-modal-width: 600px;
+}
