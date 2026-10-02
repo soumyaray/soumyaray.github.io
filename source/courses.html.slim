@@ -3,7 +3,7 @@ h1.section_title Courses
 - data.instruction.courses.each do |course|
   div class="card"
     div class="card-header"
-      h2.card-title #{course.name} (#{course.id})
+      h2.card-title #{course.name}
     div class="card-body"
       .row
         .col-md-6.order-md-2
@@ -14,9 +14,11 @@ h1.section_title Courses
           = partial("partials/img_thumb_modal", locals: {dir: 'images/courses', id: course.id, img: 'figure'})
     div class="card-footer"
       .row
-        .col-8
-          i class="fa-brands my-fa-facebook-square" aria-hidden="true" style="margin-right:5px"
-          a href="#{course.facebook_group.url}"
-            span #{course.facebook_group.name}
-        .col-4 style="text-align: right;"
-          a href="#{course.syllabus}" See Syllabus
+        .col-7
+          - if course.facebook_group
+            i class="fa-brands my-fa-facebook-square" aria-hidden="true" style="margin-right:5px"
+            a href="#{course.facebook_group.url}"
+              span #{course.facebook_group.name}
+        .col-5 style="text-align: right;"
+          i class="fa-solid fa-file-pdf" aria-hidden="true" style="margin-right:5px"
+          a href="#{course.syllabus}" Syllabus (#{course.syllabus_term})

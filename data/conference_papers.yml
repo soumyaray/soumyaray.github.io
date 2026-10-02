@@ -1,30 +1,40 @@
 ---
-highlights:
-  - EMNLP2020
-  - JBR2016
 papers:
-  - id: EMNLP2020
+  # - id:          # <CONF><YEAR>
+  #   authors:
+  #   year:
+  #   title:
+  #   conference:  # rendered as "in proceedings of <conference>"
+  #   location:    # optional, e.g. virtual
+  #   pages:
+  #   doi:
+  - id: ICIS2023
+    authors:
+      - Danks, N.
+      - Ray, S.
+    year: 2023
+    title: "Predictive Validation of Interaction Terms in PLS-SEM"
+    conference: 2023 International Conference on Information Systems (ICIS)
+  - id: NAACL2021
     authors:
       - Shmueli, B.
       - Fell, J.
       - Ray, S.
       - Ku, L.W.
-    year: 2020
+    year: 2021
     title: "Beyond Fair Pay: Ethical Implications of NLP Crowdsourcing"
-    conference: "2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies"
+    conference: "2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL)"
     location: virtual
-#     @inproceedings{shmueli2021beyond,
-#   title={Beyond Fair Pay: Ethical Implications of NLP Crowdsourcing},
-#   author={Shmueli, Boaz and Fell, Jan and Ray, Soumya and Ku, Lun-Wei},
-#   booktitle={Proceedings of the 2021 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies},
-#   year={2021}
-# }
+    pages: 3758-3769
+    doi: 10.18653/v1/2021.naacl-main.295
   - id: EMNLP2020
     authors:
       - Shmueli, B.
-      - Ku, L.W. 
+      - Ku, L.W.
       - Ray, S.
     year: 2020
     title: "Reactive Supervision: A New Method for Collecting Sarcasm Data"
-    conference: 2020 Conference on Empirical Methods in Natural Language Processing
+    conference: 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)
     location: virtual
+    pages: 2553-2559
+    doi: 10.18653/v1/2020.emnlp-main.201

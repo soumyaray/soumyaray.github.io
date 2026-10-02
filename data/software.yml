@@ -1,21 +1,40 @@
 ---
 packages:
+  # - id:          # images/software/<id>/logo.png when logo: true
+  #   logo:
+  #   name:
+  #   short_description:
+  #   home_url:
+  #   git_url:
+  #   manual:
+  #   book_url:    # optional footer links
+  #   video_url:
+  #   description:
   - id: seminr
     logo: true
     name: SEMinR
     short_description: R package for creating and estimating structural equation models using PLS
-    home_url: https://cran.r-project.org/web/packages/seminr/index.html
+    home_url: https://seminr.io
     git_url: https://github.com/sem-in-r/seminr
     manual: https://cran.r-project.org/web/packages/seminr/seminr.pdf
+    book_url: https://link.springer.com/book/10.1007/978-3-030-80519-7
+    video_url: https://www.youtube.com/playlist?list=PLb7vm6tsQ3Ks0TyMWw3EUlgoMr06_7U8S
     description: >
       This R package offers a natural feeling, domain-specific language to build and estimate structural equation models in R.
       It uses variance-based PLS estimation to model both composite and common-factor constructs.
-      It offers High-level functions to quickly specify interactions and complicated structural models.
-      And it offers high performance, multi-core bootstrapping.
-  
-  - id: plspredict
-    name: PLSpredict (coming soon)
-    git_url: https://github.com/ISS-Analytics/pls-predict
+      It offers high-level functions to quickly specify interactions and complicated structural models,
+      high performance multi-core bootstrapping, and predictive validation of PLS models.
+      SEMinR has 18,000+ downloads, three learning books (including an open-access PLS-SEM workbook), and a YouTube lecture series,
+      and teachers and researchers around the world use it in classrooms and publications.
+
+  - id: compstatslib
+    name: compstatslib
+    short_description: R package for interactive, visual learning and teaching of computation and statistics
+    home_url: https://cran.r-project.org/web/packages/compstatslib/index.html
+    git_url: https://github.com/compstatslib/compstatslib
+    manual: https://cran.r-project.org/web/packages/compstatslib/compstatslib.pdf
     description: >
-      This upcoming R package will allow users to generate predictions from PLS models created using SEMinR.
-      It will also produce predictive validation scores of constructs, which are of greatest interest to researchers.
+      This R package offers interactive gadgets and plotting functions to visualize data and statistical concepts in two and three dimensions.
+      Explore a data frame as a rotatable 3D point cloud, or rotate the fitted surface of a moderated regression.
+      Simulations demonstrate sampling distributions, confidence intervals, t-tests, and matrix inversion for teaching and self-study.
+      Each gadget prints the call that reproduces its final view, so an exploration can go straight into a script or report.

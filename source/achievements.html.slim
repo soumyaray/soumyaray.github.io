@@ -23,7 +23,11 @@ h1.section_title Grants
         div class="card-body"
           ul.bullet-free
             - grants[count].instances.each do |instance|
-              li 
-                span #{instance.duration} : #{instance.project}
-                br
-                span.casual Grant ID: #{instance.id}
+              li
+                - if instance.duration
+                  span #{instance.duration} : #{instance.project}
+                - else
+                  span #{instance.project}
+                - if instance.id
+                  br
+                  span.casual Grant ID: #{instance.id}

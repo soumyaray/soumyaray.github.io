@@ -3,28 +3,63 @@ highlights:
   - MS2024
   - IM2023
 papers:
-  # - id:
-  #   authors:
-  #   year:
+  # - id:          # <JOURNAL-ABBREV><YEAR>; images/papers/<id>/ holds figure_*.png for highlights
+  #   authors:     # "Surname, I." list, in published order
+  #   year:        # issue year (Crossref published-print), or "forthcoming"
   #   title:
   #   journal:
   #   volume:
   #   issue:
-  #   pages:
-  - id: MS2024-2
-    authors: 
-      - Fišar, M. 
-      - Greiner, B. 
-      - Huber, C. 
-      - Katok, E. 
+  #   pages:       # "start-end"; or `article:` for article-numbered journals
+  #   article:
+  #   doi:         # lets scripts/crossref_check.rb look the paper up exactly
+  #   note:        # shown after the citation
+  #   abstract:    # shown on the home page for highlights
+  - id: JBA2026
+    authors:
+      - Bobea, M.
+      - Shmueli, G.
+      - Ray, S.
+    year: forthcoming
+    title: "When Will Your Model Fail? TreeAlert: A Method for Predicting Extreme Forecasting Failures"
+    journal: Journal of Business Analytics
+  - id: HPT2024
+    authors:
+      - Schwartz, D.G.
+      - Spitzer, S.
+      - Khalemsky, M.
+      - Cano Bejar, A.H.
+      - Ray, S.
+      - Chiou, T.
+      - Sakhnini, R.
+      - Lanin, R.
+      - Meir, M.
+      - Tsai, M.C.T.
+    year: 2024
+    title: "Apps don't work for patients who don't use them: Towards frameworks for digital therapeutics adherence"
+    journal: Health Policy and Technology
+    volume: 13
+    issue: 2
+    article: "100848"
+    doi: 10.1016/j.hlpt.2024.100848
+  - id: MS2024b
+    authors:
+      - Fišar, M.
+      - Greiner, B.
+      - Huber, C.
+      - Katok, E.
       - Ozkes, A.
-      - the Management Science Reproducibility Collaboration* 
-    year: (forthcoming)
+      - the Management Science Reproducibility Collaboration*
+    year: 2024
     title: "Reproducibility in Management Science"
     journal: Management Science
-    volume: "note: member of the Management Science Reproducibility Collaboration"
+    volume: 70
+    issue: 3
+    pages: 1343-1356
+    doi: 10.1287/mnsc.2023.03556
+    note: "* member of the Management Science Reproducibility Collaboration"
   - id: JAIS2024
-    authors: 
+    authors:
       - Shmueli, G.
       - Ray, S.
     year: 2024
@@ -33,9 +68,10 @@ papers:
     volume: 25
     issue: 1
     pages: 60-75
+    doi: 10.17705/1jais.00864
   - id: MS2024
-    authors: 
-      - Danks, N.P. 
+    authors:
+      - Danks, N.P.
       - Ray, S.
       - Shmueli, G.
     year: 2024
@@ -44,55 +80,79 @@ papers:
     volume: 70
     issue: 1
     pages: 647-669
+    doi: 10.1287/mnsc.2023.4705
     abstract: >
-      Construct-based models (e.g., PLS path modeling and CBSEM) have become a mainstay of management research. 
-      However, these models are likely overfit to the data samples upon which they are estimated. 
+      Construct-based models (e.g., PLS path modeling and CBSEM) have become a mainstay of management research.
+      However, these models are likely overfit to the data samples upon which they are estimated.
       We propose a composite overfit analysis (COA) framework that applies predictive tools to describe the sources and ramifications of overfit in terms of the focal concepts important to empirical researchers.
       The framework employs a novel deviance tree method to group deviant cases that have similar predictive deviance and for similar theoretical reasons.
   - id: IM2023
-    authors: 
+    authors:
       - Cano Bejar, A.H.
       - Ray, S.
-      - Huang, Y.H. 
+      - Huang, Y.H.
     year: 2023
     title: "Fighting for the Status Quo: Threat to Tech Self-Esteem and Opposition to Competing Smartphones"
     journal: Information & Management
     volume: 60
     issue: 2
+    article: "103748"
+    doi: 10.1016/j.im.2022.103748
     abstract: >
       Users of rival technology platforms, such as Android-versus-iOS, often harbor hostile opposition to each other. We conducted an empirical study of
       smartphone users, where we find that the threat to technology self-esteem arises from distinct antecedents and
       offers a singular explanation for opposition. Moreover, we show the unintended consequences of employing lock-
       in strategies and provide advice on why and how to mitigate them.
   - id: JAIS2023
-    authors: 
+    authors:
       - Greene, T.
       - Shmueli, G.
       - Ray, S.
     year: 2023
     title: "Taking the Person Seriously: Ethically-aware IS Research in the Era of Reinforcement Learning-based Personalization"
-    journal: Journal of the Association of Information Systems
+    journal: Journal of the Association for Information Systems
     volume: 24
     issue: 6
     pages: 1527-1561
-  - id: ISF2021
-    authors: 
-      - Kuem, J. 
+    doi: 10.17705/1jais.00800
+  - id: ISF2022
+    authors:
+      - Kuem, J.
       - Ray, S.
-    year: 2021
+    year: 2022
     title: "Personality Antecedents and Consequences of Internet Addiction Vis-à-vis Internet Habit: a Theory and an Empirical Investigation"
     journal: Information Systems Frontiers
-    pages: 1-16
-  - id: EJIS2020
+    volume: 24
+    issue: 2
+    pages: 579-594
+    doi: 10.1007/s10796-021-10110-2
+  - id: EJIS2021
     authors:
-    - Kuem, J. 
-    - Ray, S. 
-    - Hsu, P.
-    - Khansa, L.
-    year: 2020
+      - Kuem, J.
+      - Ray, S.
+      - Hsu, P.
+      - Khansa, L.
+    year: 2021
     title: "Smartphone Addiction and Conflict: An Incentive-Sensitization Perspective of Addiction for Information Systems"
     journal: European Journal of Information Systems
-    pages: 1-22
+    volume: 30
+    issue: 4
+    pages: 403-424
+    doi: 10.1080/0960085x.2020.1803154
+  - id: DSJ2021
+    authors:
+      - Sharma, P.N.
+      - Shmueli, G.
+      - Sarstedt, M.
+      - Danks, N.
+      - Ray, S.
+    year: 2021
+    title: Prediction-Oriented Model Selection in Partial Least Squares Path Modeling
+    journal: Decision Sciences
+    volume: 52
+    issue: 3
+    pages: 567-607
+    doi: 10.1111/deci.12329
   - id: IMDS2020
     authors:
       - Shiau, W.-L.
@@ -103,132 +163,131 @@ papers:
     year: 2020
     title: "Understanding fintech continuance: perspectives from self-efficacy and ECT-IS theories"
     journal: Industrial Management & Data Systems
-    volume: 12
+    volume: 120
     issue: 9
     pages: 1659-1689
+    doi: 10.1108/imds-02-2020-0069
   - id: CHB2019
     authors:
       - Seo, D.
       - Ray, S.
     year: 2019
+    title: "Habit and Addiction in the Use of Social Networking Sites: Their Nature, Antecedents, and Consequences"
     journal: Computers in Human Behavior
-    title: "Habit and Addiction in the Use of Social Networking Sites:  Their Nature, Antecedents, and Consequences"
     volume: 99
     pages: 109-125
+    doi: 10.1016/j.chb.2019.05.018
   - id: BIGDATA2019
     authors:
       - Greene, T.
       - Shmueli, G.
       - Ray, S.
-      - Fell J.
+      - Fell, J.
     year: 2019
-    journal: Big Data
     title: "Adjusting to the GDPR: The Impact on Data Scientists and Behavioral Researchers"
+    journal: Big Data
     volume: 7
     issue: 3
     pages: 140-162
-  - id: DSJ2018
+    doi: 10.1089/big.2018.0176
+  - id: ITEM2018
     authors:
-      - Sharma, P. N.
-      - Shmueli, G.
-      - Sarstedt, M.
-      - Danks, N.
+      - Khansa, L.
+      - Barkhi, R.
       - Ray, S.
-    journal: Decision Sciences
-    title: Prediction-Oriented Model Selection in Partial Least Squares Path Modeling
-    volume: 21
-    issue: 1
-    pages: 243-241
+      - Davis, Z.
     year: 2018
-  - id: "ITEM2017"
-    authors:
-      - "Khansa, L."
-      - "Barkhi, R."
-      - "Ray, S."
-      - "Davis, Z."
-    journal: Information Technology and Management
     title: "Cyberloafing in the workplace: mitigation tactics and their impact on individuals’ behavior"
-    year: 2017
-    pages: 1-19
-    ISSN: 1573-7667
+    journal: Information Technology and Management
+    volume: 19
+    issue: 4
+    pages: 197-215
     doi: 10.1007/s10799-017-0280-1
-  - id: "JMIS2017"
+  - id: JMIS2017
     authors:
-      - "Kuem, J."
-      - "Ray, S."
-      - "Siponen, M."
-      - "Kim, S. S."
-    journal: "Journal of Management Information Systems"
+      - Kuem, J.
+      - Ray, S.
+      - Siponen, M.
+      - Kim, S.S.
+    year: 2017
     title: "What Leads to Prosocial Behaviors on Social Networking Services: A Tripartite Model"
+    journal: Journal of Management Information Systems
     volume: 34
     issue: 1
     pages: 40-70
-    year: 2017
+    doi: 10.1080/07421222.2017.1296744
     abstract: "This study offers three distinct mechanisms that regulate how one’s experience at an SNS translates into commitment that leads to prosocial behavior"
-  - id: "JBR2016"
+  - id: JBR2016
     authors:
-      - "Shmueli, G."
-      - "Ray, S."
-      - "Estrada, J. M. V."
-      - "Chatla, S. B."
-    journal: "Journal of Business Research"
-    title: "The Elephant in the Room: Predictive Performance of PLS Models"
-    volume: 69
-    pages: 4552–4564
+      - Shmueli, G.
+      - Ray, S.
+      - Velasquez Estrada, J.M.
+      - Chatla, S.B.
     year: 2016
+    title: "The Elephant in the Room: Predictive Performance of PLS Models"
+    journal: Journal of Business Research
+    volume: 69
+    issue: 10
+    pages: 4552-4564
+    doi: 10.1016/j.jbusres.2016.03.049
     abstract: "An outline of how predictive PLS methodology can strengthen theory-building research, with software tools to implement it."
-  - id: "ISR2014"
+  - id: ISR2014
     authors:
-      - "Ray, S."
-      - "Kim, S.S."
-      - "Morris, J.G."
-    issue: 3
-    journal: "Information Systems Research"
-    pages: 528-546
+      - Ray, S.
+      - Kim, S.S.
+      - Morris, J.G.
+    year: 2014
     title: "The Central Role of Engagement in Online Communities"
+    journal: Information Systems Research
     volume: 25
-    year: 2014
+    issue: 3
+    pages: 528-546
+    doi: 10.1287/isre.2014.0525
     abstract: "A framework that demonstrates what engagement is, where it comes from, and how it powerfully explains knowledge contribution and word of mouth."
-  - id: "IJIM2014"
+  - id: IJIM2014
     authors:
-      - "Hsu, P."
-      - "Ray, S."
-      - "Li-Hsieh, Y."
-    issue: 4
-    journal: "International Journal of Information Management"
-    pages: 474-488
-    title: "Examining Cloud Computing Adoption Intention, Pricing Mechanism, and Deployment Model"
-    volume: 34
+      - Hsu, P.
+      - Ray, S.
+      - Li-Hsieh, Y.
     year: 2014
-  - id: "IM2013"
+    title: "Examining Cloud Computing Adoption Intention, Pricing Mechanism, and Deployment Model"
+    journal: International Journal of Information Management
+    volume: 34
+    issue: 4
+    pages: 474-488
+    doi: 10.1016/j.ijinfomgt.2014.04.006
+  - id: IM2013
     authors:
-      - "Ray, S."
-      - "Seo, D."
-    issue: 7
-    journal: "Information & Management"
-    pages: 523-539
-    title: "The interplay of conscious and automatic mechanisms in the context of routine use: An integrative and comparative study of contrasting mechanisms"
-    volume: 50
+      - Ray, S.
+      - Seo, D.
     year: 2013
-  - id: "ISR2012"
+    title: "The interplay of conscious and automatic mechanisms in the context of routine use: An integrative and comparative study of contrasting mechanisms"
+    journal: Information & Management
+    volume: 50
+    issue: 7
+    pages: 523-539
+    doi: 10.1016/j.im.2013.07.008
+  - id: ISR2012
     authors:
-      - "Ray, S."
-      - "Kim, S.S."
-      - "Morris, J.G."
-    issue: 1
-    journal: "Information Systems Research"
-    pages: 197-213
-    title: "Research Note - Online Users' Switching Costs: Their Nature and Formation"
-    volume: 23
+      - Ray, S.
+      - Kim, S.S.
+      - Morris, J.G.
     year: 2012
-  - id: "DS2011"
+    title: "Research Note - Online Users' Switching Costs: Their Nature and Formation"
+    journal: Information Systems Research
+    volume: 23
+    issue: 1
+    pages: 197-213
+    doi: 10.1287/isre.1100.0340
+  - id: DS2011
     authors:
-      - "Ray, S."
-      - "Ow, T."
-      - "Kim, S.S."
-    issue: 2
-    journal: "Decision Sciences"
-    pages: 391-412
-    title: "Security Assurance: How Online Service Providers Can Influence Security Control Perceptions and Gain Trust"
-    volume: 42
+      - Ray, S.
+      - Ow, T.
+      - Kim, S.S.
     year: 2011
+    title: "Security Assurance: How Online Service Providers Can Influence Security Control Perceptions and Gain Trust"
+    journal: Decision Sciences
+    volume: 42
+    issue: 2
+    pages: 391-412
+    doi: 10.1111/j.1540-5915.2011.00316.x

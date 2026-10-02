@@ -1,56 +1,64 @@
 ---
-editorial_responsibilities:
-  - id: IM_2018
-    outlet: Information & Management (I&M)
-    board: Editorial Review Board
-    position: Associate Editor
-    dates: '2018-2021'
-    event_date: '2018-02-08'
-    event_description: Assuming responsibilities as an Associate Editor of Information & Management (I&M)
-  - id: JASEM_2018
-    outlet: Journal of Applied Structural Equation Modeling (JASEM)
-    board: Editorial Review Board
-    position: Associate Editor
-    dates: '2018-present'
-    event_date: '2018-02-03'
-    event_description: Delighted to join the Editorial Advisory Board of the Journal of Applied Structural Equation Modeling
-
+# services: groups of one-line strings, newest first.
 services:
   - id: "service_journals"
     name: "Editorial Responsibilities"
     instances:
-      - "Information & Management (I&M) - Editorial Review Board - Associate Editor - 2018-present"
-      - "Journal of Applied Structural Equation Modeling (JASEM) - Editorial Advisory Board - 2018-present"
+      - "Decision Support Systems (DSS) – Guest Associate Editor, Special Issue on Extended Reality for Enhanced Decision Making and Organizational Transformation – 2026"
+      - "Journal of the Association for Information Systems (JAIS) – Editorial Review Board – 2025-present"
+      - "Information Systems Research (ISR) – Editorial Review Board – 2022-present"
+      - "Decision Support Systems (DSS) – Associate Editor – 2022-present"
+      - "Journal of Applied Structural Equation Modeling (JASEM) – Editorial Advisory Board – 2018-present"
+      - "Industrial Management & Data Systems (IMDS) – Guest Editor, Special Issue Editorial Board – 2019"
+      - "Information & Management (I&M) – Associate Editor, Editorial Review Board – 2018-2021"
 
   - id: "service_conference"
     name: "Conference Service"
     instances:
-      - "Session Chair: INFORMS International 2018 - Predictive Analytics in Service and Education"
-      - "Session Chair: INFORMS International 2018 - Data Privacy, Path Models and Predictive Analytics"
-      - "Panelist: International Conference on Service Science and Innovation (ICSSI) 2013"
+      - "Program Co-Chair: Taiwan Summer Workshop on Information Management (TSWIM) 2026"
+      - "Track AE: International Conference on Information Systems (ICIS) 2026 – User Behavior and Engagement"
+      - "Track AE: Pacific Asia Conference on Information Systems (PACIS) 2026 – Healthcare in IS"
+      - "Scientific Committee: International Conference on Partial Least Squares Structural Equation Modeling (PLS) 2026"
+      - "Track AE: International Conference on Information Systems (ICIS) 2025 – Healthcare in IS"
+      - "Program Co-Chair: International Conference for Resilience and Management (ICRM) 2024"
+      - "Program Committee: Taiwan Summer Workshop on Information Management (TSWIM) 2024"
+      - "Track Co-Chair: Pacific Asia Conference on Information Systems (PACIS) 2020, 2021 – Security and Privacy"
+      - "Program Committee: International Conference on Service Science and Innovation (ICSSI) 2020"
+      - "Session Chair: INFORMS International 2018 – Predictive Analytics in Service and Education"
+      - "Session Chair: INFORMS International 2018 – Data Privacy, Path Models and Predictive Analytics"
+      - "Panelist: International Conference on Service Science and Innovation (ICSSI) 2013 – Service Engineering Panel"
       - "Discussant: International Association for Management of Technology (IAMOT) 2012"
 
   - id: "review_journal"
     name: "Journal Reviews"
     instances:
-      - "MIS Quarterly (MISQ) - 2014, 2013, 2012"
-      - "Information Systems Research (ISR) - 2012"
-      - "Decision Sciences Journal (DSJ) - 2014"
-      - "Decision Support Systems (DSS) - 2013"
-      - "DATA BASE - 2013, 2012"
-      - "International Journal of Quality and Service Sciences (IJQSS) - 2014"
-      - "Information Systems and e-Business Management (ISEB) - 2012"
-      - "Pacific Asian Journal of the Association for Information Systems (PAJAIS) - 2011"
-      - "National Taiwan University (NTU) Management Review  - 2014"
+      - "ACM Transactions on Management Information Systems (TMIS)"
+      - "DATA BASE"
+      - "Decision Sciences Journal (DSJ)"
+      - "Decision Support Systems (DSS)"
+      - "European Journal of Information Systems (EJIS)"
+      - "IEEE Transactions on Services Computing (TSC)"
+      - "Information Systems and e-Business Management (ISEB)"
+      - "Information Systems Journal (ISJ)"
+      - "Information Systems Research (ISR)"
+      - "International Journal of Quality and Service Sciences (IJQSS)"
+      - "Journal of Applied Structural Equation Modeling (JASEM)"
+      - "Journal of Hospitality and Tourism Technology (JHTT)"
+      - "Journal of Management (JoM) Chinese"
+      - "MIS Quarterly (MISQ)"
+      - "National Taiwan University (NTU) Management Review"
+      - "Pacific Asia Journal of the Association for Information Systems (PAJAIS)"
+      - "Scientific Research Publishing (SRP)"
 
   - id: "review_conference"
     name: "Conference Reviews"
     instances:
-      - "International Conference on Information Systems (ICIS) - 2014, 2012"
-      - "Hawaii International Conference on System Sciences (HICSS) - 2014, 2013, 2011"
-      - "International Conference on Information Resources Management (ICIRM) - 2011"
-      - "Pacific Asia Conference on Information Systems (PACIS) - 2009"
-      - "CHI 2015"
+      - "CHI Conference on Human Factors in Computing Systems (CHI)"
+      - "DIGIT Workshop (SIGADIT)"
+      - "Hawaii International Conference on System Sciences (HICSS)"
+      - "International Conference on Information Resources Management (ICIRM)"
+      - "International Conference on Information Systems (ICIS)"
+      - "Pacific Asia Conference on Information Systems (PACIS)"
 
   - id: "talk_invited"
     name: "Invited Talks"

@@ -14,8 +14,10 @@ h1.section_title Software Packages
       .row
         - [["Homepage", "fa-solid fa-house", package.home_url],
            ["Source Code", "fa-brands fa-github", package.git_url],
-           ["Manual", "fa-solid fa-book", package.manual]].each do |name, icon, data|
+           ["Manual", "fa-solid fa-book", package.manual],
+           ["Book", "fa-solid fa-book-open", package.book_url],
+           ["Videos", "fa-brands my-fa-youtube", package.video_url]].each do |name, icon, data|
           - if data
-            .col-4
+            .col-6.col-md-4
               i class="#{icon}" aria-hidden="true" style="margin-right:5px"
               a href="#{data}" #{name}

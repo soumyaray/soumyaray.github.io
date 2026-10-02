@@ -1,11 +1,19 @@
 ---
 highlights:
   - "SOA"
-  - "BASM"
+  - "CSDS"
 courses:
+  # - id:                # course abbreviation; images/courses/<id>/ holds overview_* and figure_* images
+  #   name:              # full name with abbreviation, e.g. "Service Oriented Architecture (SOA)"
+  #   syllabus:          # downloads/syllabi/<id>.pdf — copy of the latest syllabus PDF
+  #   syllabus_term:     # term of that syllabus, e.g. "Fall 2025"
+  #   facebook_group:    # optional: url + name
+  #   description:
+  #   short_description: # home page
   - id: "SOA"
     name: "Service Oriented Architecture (SOA)"
-    syllabus: "https://docs.google.com/document/d/1qlJsOOrqT-uBxmRaYiGWwlQs6jXEFI5jzk8UGnux27Y/edit"
+    syllabus: "downloads/syllabi/SOA.pdf"
+    syllabus_term: "Fall 2025"
     facebook_group:
       url: "https://www.facebook.com/groups/ISS.SOAD/"
       name: "Web Service Development @ NTHU"
@@ -14,25 +22,25 @@ courses:
       We utilize responsive interfaces, microservices, asynchronous background workers, message queues, and web sockets.
       We train to develop high quality code, publish open source, and deploy on cloud platforms.
     short_description: Creating scalable, domain-driven, distributed applications for business.
-  - id: "SERVSEC"
-    name: "Service Security"
-    syllabus: "https://docs.google.com/document/d/1gJcwh5cPN0kFbP6-qnpu-_V3XQ_AQP1ux8RhnGOpk3I/edit?usp=sharing"
-    facebook_group:
-      url: "https://www.facebook.com/groups/service.sec/"
-      name: "Service Security @ NTHU"
+  - id: "SEC"
+    name: "IT Service Security (SEC)"
+    syllabus: "downloads/syllabi/SEC.pdf"
+    syllabus_term: "Spring 2026"
     description: >
       This class transforms students understanding of information and their ability to develop secure software.
       We ensure authentication, authorization, confidentiality, integrity, and non-repudiation.
       Students implement encrypted storage and credentials, single sign-on, digital signing, token-based authorization, input validation, content-delivery networks, and content security policies.
     short_description: Using security principles to create highly secure and innovative services
-  - id: "BASM"
-    name: "Business Analytics Using Computational Statistics (BACS)"
-    syllabus: "https://docs.google.com/document/d/1D8B5RHUkllzYolMUvQpV0jhAQcmmhZMzWxYmJG3CnG0/edit"
+  - id: "CSDS"
+    name: "Computational Statistics for Data Science (CSDS)"
+    syllabus: "downloads/syllabi/CSDS.pdf"
+    syllabus_term: "Spring 2026"
     facebook_group:
       url: "https://www.facebook.com/groups/nthu.analytics/"
-      name: "Busines Analytics @ NTHU"
+      name: "Business Analytics @ NTHU"
     description: >
-      This class develops skills to infer knowledge from high dimensional business data.
-      We compare our intuition and theories with simulation, visualization, and statistics.
-      This class favors computational approaches to boost statistical techniques for complex data.
+      This class uses computational methods to overcome the limits of traditional statistics, to support decisions and produce reproducible analyses.
+      We reshape data, run simulations, discover dimensions in data, use machine learning, and build complex models.
+      Students write readable, reusable, and fast R code, implement their own algorithms, and create custom visualizations.
+      Formerly "Business Analytics Using Computational Statistics (BACS)".
     short_description: Using computation as a lens to approach and understand statistics and data analysis.

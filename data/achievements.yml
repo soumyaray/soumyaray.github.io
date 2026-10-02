@@ -1,39 +1,82 @@
 ---
+# awards: groups of "Award – year(s) (Awarding body)" strings, newest first.
+# grants: groups by role. A grant's duration starts in the ROC year that opens its
+#   ID (ROC year + 1911 = start year); -MY3 grants run three years.
 awards:
   - id: "research"
     name: "Research Awards"
     instances:
-      - Distinguished Research Award - 2019 (Ministry of Science and Technology)
-      - Wu Ta-You Award — 2012 (National Science Council)
-      - New Faculty Research Award — 2012 (National Tsing Hua University)
+      - Outstanding Research Award – 2019 (Ministry of Science and Technology)
+      - Wu Ta-You Memorial Award – 2012 (National Science Council)
+      - New Faculty Research Award – 2012 (National Tsing Hua University)
+      - Outstanding Research Award – 2021, 2023, 2025 (Hou De Association)
+      - CTM Research Award – 2022, 2024 (College of Technology Management, NTHU)
+      - E-SUN Top Journal Publication Award – 2023 (College of Technology Management, NTHU)
+      - Top Journal Submissions Award – 2021, 2023 (College of Technology Management, NTHU)
   - id: "professional"
     name: "Professional Service Awards"
     instances:
-      - Outstanding Reviewer - 2014 (Decision Sciences Journal)
+      - Outstanding Editorial Review Board Member – 2026 (Information Systems Research)
+      - Best Reviewer – 2025 (Taiwan Summer Workshop on Information Management)
+      - Best Reviewer – 2021 (Journal of Applied Structural Equation Modeling)
+      - Outstanding Reviewer – 2014 (Decision Sciences Journal)
   - id: "teaching"
     name: "Teaching Awards"
     instances:
-      - '"Eternal" Outstanding Teaching Award - 2023 (National Tsing Hua University)'
-      - Outstanding Teaching Award - 2019 (National Tsing Hua University)
-      - Outstanding Teaching Award - 2019 (College of Technology Management)
-      - Outstanding Teaching Award - 2015 (National Tsing Hua University)
-      - Outstanding Teaching Award - 2015 (College of Technology Management)
+      - '"Eternal" Outstanding Teaching Award – 2023 (National Tsing Hua University)'
+      - Outstanding Teaching Award – 2022 (National Tsing Hua University) – top 2%
+      - Outstanding Teaching Award – 2019 (National Tsing Hua University) – top 2%
+      - Outstanding Teaching Award – 2019 (College of Technology Management, NTHU)
+      - Outstanding Teaching Award – 2015 (National Tsing Hua University) – top 2%
+      - Outstanding Teaching Award – 2015 (College of Technology Management, NTHU)
+  - id: "mentoring"
+    name: "Mentoring Awards"
+    instances:
+      - Outstanding Mentor Award – 2016 (College of Technology Management, NTHU)
+      - Outstanding Masters Dissertation Award (mentored student) – 2012 (Service Science Society of Taiwan)
 grants:
-  - id: "MOST"
-    name: "Ministry of Science and Technology (Taiwan)"
+  - id: "PI"
+    name: "Principal Investigator (Ministry of Science and Technology, Taiwan)"
     instances:
+      - duration: "2026-2027"
+        id: 115-2918-I-007-005
+        project: "Simulating Persona-driven AI Agents in Healthcare Systems"
+      - duration: "2024-2027"
+        id: 113-2410-H-007-080-MY3
+        project: "Predictive and Nonparametric Methods for Robust SEM"
+      - duration: "2022-2023"
+        id: 111-2923-H-007-001
+        project: "Psychological Ownership of mHealth Apps"
+      - duration: "2021-2024"
+        id: 110-2410-H-007-027-MY3
+        project: "How Users’ Sense of Control Affects IT Interactions"
+      - duration: "2019-2020"
+        id: 108-2918-I-007-003
+        project: "Research IT Platforms for Behavioral Research"
+      - duration: "2018-2019"
+        id: 107-2410-H-007-033
+        project: "Advancing Predictive Modeling of User Behavior"
+      - duration: "2016-2017"
+        id: 105-B2013QB
+        project: "Using Predictive Analytics to Advance Theory-based Modeling"
+      - duration: "2015-2016"
+        id: 104-2410-H-007-057
+        project: "Active Resistance Against Alternative Platforms"
       - duration: "2014-2015"
+        id: 103-2410-H-007-039
         project: "Technology Addiction in the Context of Smartphones"
-        id: "103-2410-H-007-039"
-  - id: "NSC"
-    name: "National Science Council (Taiwan)"
-    instances:
       - duration: "2013-2014"
         id: 102-2410-H-007-053
-        project: "Habit and Addiction at Social Networking Wesbites"
+        project: "Habit and Addiction at Social Networking Websites"
       - duration: "2012-2013"
         id: 101-2410-H-007-004
         project: "Employee Response to IT Policies"
       - duration: "2011-2012"
         id: 100-2410-H-007-001
         project: "Online Communities: Identity, Engagement, and IT Artifacts"
+  - id: "CoI"
+    name: "Co-Investigator"
+    instances:
+      - project: "Service Resilience Management – Government Benchmark Project"
+      - project: "Internet of Things – Government Benchmark Project"
+      - project: "Service Design for Smarter Service Through Analytics"
