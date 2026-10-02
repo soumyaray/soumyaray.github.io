@@ -18,11 +18,13 @@ a class="invisible" name="journal-papers"
   .card-header
     h2.card-title Journal Papers
   .card-body
-    = partial("partials/research_papers", locals: { papers: data.journal_papers.papers[0..2] })
+    - shown = data.journal_papers.papers.first(3)
+    - more = data.journal_papers.papers.drop(3)
+    = partial("partials/research_papers", locals: { papers: shown })
     a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"
-      = "+ #{data.journal_papers.papers.count - 2} more"
+      = "+ #{more.size} more"
     div class="collapse" id="collapseExample"
-      = partial("partials/research_papers", locals: { papers: data.journal_papers.papers[3..] })
+      = partial("partials/research_papers", locals: { papers: more })
   .card-footer
     .row
       .col-6
