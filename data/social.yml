@@ -15,9 +15,9 @@ identities:
       url: "https://facebook.com/soumya.ray.prof"
       name: "facebook/soumya.ray.prof"
     - id: "twitter"
-      icon: "fa-brands my-fa-twitter"
-      url: "https://twitter.com/soumyaray"
-      name: "twitter/soumyaray"
+      icon: "fa-brands my-fa-x-twitter"
+      url: "https://x.com/soumyaray"
+      name: "x/soumyaray"
   professional:
     - id: "cv"
       icon: "fa-solid fa-download"
