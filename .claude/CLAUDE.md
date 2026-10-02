@@ -18,7 +18,12 @@ bundle exec rake images:delete              # remove all *_thumb.png
 bundle exec rake url:integrity URL=https://…/lib.js   # sha384 SRI hash for a CDN asset
 ```
 
-Image tasks need ImageMagick (`convert`). There are no tests or linters.
+Image tasks need ImageMagick (`convert`). There are no tests or linters; `scripts/` (outside `source/`, so never built) has dev checks, documented in `scripts/README.md`:
+
+```bash
+bash scripts/smoke.sh                       # middleman serve, every page must return 200
+(cd scripts && node shoot.mjs shots/after)  # Playwright screenshots of a served build (needs npm install once)
+```
 
 ## Branches, build, and deploy
 

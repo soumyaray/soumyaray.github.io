@@ -27,3 +27,8 @@ CLAUDE.local.md
 # Sideways files
 .swcopy
 .swsymlink
+
+# Dev scripts
+/scripts/node_modules
+/scripts/package-lock.json
+/scripts/shots

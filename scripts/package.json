@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "type": "module",
+  "description": "Dev-only checks for soumyaray.com (not part of the site build)",
+  "devDependencies": {
+    "playwright": "^1"
+  }
+}
