@@ -1,8 +1,6 @@
 source 'https://rubygems.org' # use 'http://' if OpenSSL not installed
 ruby File.read('.ruby-version').chomp
 
-gem 'rack', '>= 2.0.6'
-gem 'ffi', '>= 1.9.24'
 gem 'slim', '~> 5.2'
 
 # For common CLI tasks
