@@ -52,7 +52,7 @@ The source of truth for content is the CV at `/Users/soumyaray/Sync/Dropbox/Work
 
 Images are stored once in the repo: git shares a blob across branches, so an image on both `source` and `master` costs nothing extra.
 
-`config.rb` keeps source-only images out of the build with `ignore`: every `*_original.*` file and `images/research/**`. Pages use only `*_thumb.png`, `*_modal.png`, `ray-mangaface-sm.png`, and `software/*/logo.png`. If a page starts to reference an ignored file, change the `ignore` rules.
+`config.rb` keeps source-only images out of the build with `ignore`: every `*_original.*` file and `images/research/**`. Pages use only `*_thumb.png`, `*_modal.png`, `photo/soumya-ray-{thumb,modal}.jpg` (sidebar photo and its modal; the full-size download is `source/downloads/soumya-ray-photo.jpg`), and `software/*/logo.png`. If a page starts to reference an ignored file, change the `ignore` rules.
 
 ## Architecture
 

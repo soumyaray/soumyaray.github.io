@@ -49,6 +49,8 @@ await state('state-courses-overview-modal', D, 'courses', p => p.locator('[data-
 await state('state-research-expanded', D, 'research', async p => { await p.locator('a[href="#collapseExample"]').click(); await p.waitForTimeout(600); await p.locator('#collapseExample').scrollIntoViewIfNeeded(); });
 await state('state-social-pgp-modal', D, 'social', p => p.locator('[data-target="#showPgpKey"], [data-bs-target="#showPgpKey"]').click());
 await state('state-privacy-modal', D, '', p => p.locator('[data-target="#showPrivacyPolicy"], [data-bs-target="#showPrivacyPolicy"]').click());
+await state('state-photo-modal', D, '', p => p.locator('[data-bs-target="#showPhoto"]').click());
+await state('state-phone-photo-modal', P, '', p => p.locator('[data-bs-target="#showPhoto"]').click());
 await state('state-phone-menu-open', P, '', p => p.locator('.navbar-toggle, .navbar-toggler').click());
 await state('state-phone-menu-closed', P, '', async () => {});
 await state('state-tablet-index', [800, 1000], '', async () => {});

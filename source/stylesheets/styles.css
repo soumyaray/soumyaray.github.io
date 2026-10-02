@@ -418,12 +418,16 @@ body#bootstrap-override {
   width: 100%;
 }
 
-#bootstrap-override .navbar-header > a {
+#bootstrap-override .navbar-header > .brand_and_logo {
   flex: 1;
-  color: #666;
 }
 
-#bootstrap-override .navbar-header > a:hover {
+#bootstrap-override .brand_and_logo > a {
+  color: #666;
+  text-decoration: none;
+}
+
+#bootstrap-override .brand_and_logo > a:hover {
   text-decoration: none;
   color: #212121;
 }
@@ -465,4 +469,10 @@ body#bootstrap-override {
 /* Bootstrap 3 modals were 600px wide; Bootstrap 5 defaults to 500px */
 #bootstrap-override .modal {
   --bs-modal-width: 600px;
+}
+
+/* Sidebar photo: rounded square with the card shadow, to match the cards */
+#bootstrap-override .photo-thumb {
+  border-radius: 4%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }

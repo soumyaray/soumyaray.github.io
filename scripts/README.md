@@ -12,7 +12,7 @@ bash scripts/smoke.sh            # PORT=4567 by default
 
 ## `shoot.mjs`: screenshots before and after a change
 
-Uses Playwright. It blocks Cookiebot so that the banner does not cover the pages. It takes full-page screenshots of the 8 pages at 1280px and 390px wide. It also takes shots of these states: a paper modal, a course modal, the expanded journal list, the PGP and privacy modals, and the phone menu. It writes `console.log` with console errors, failed requests, and 4xx responses.
+Uses Playwright. It blocks Cookiebot so that the banner does not cover the pages. It takes full-page screenshots of the 8 pages at 1280px and 390px wide. It also takes shots of these states: the sidebar photo modal (desktop and phone), a paper modal, a course modal, the expanded journal list, the PGP and privacy modals, and the phone menu. It writes `console.log` with console errors, failed requests, and 4xx responses.
 
 One-time setup:
 
