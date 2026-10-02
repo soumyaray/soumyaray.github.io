@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# Compare each paper in data/journal_papers.yml and data/conference_papers.yml
+# Compare each paper in data/journal_papers.yml, conference_papers.yml, and books.yml
 # with its Crossref record: author order, year, volume, issue, pages, DOI.
 # Looks a paper up by its `doi:` field when present, else by title.
 # Read-only: it prints differences and never edits the YAML.
@@ -12,7 +12,7 @@ require 'net/http'
 require 'uri'
 
 DATA = File.expand_path('../data', __dir__)
-FILES = %w[journal_papers conference_papers].freeze
+FILES = %w[journal_papers conference_papers books].freeze
 API = 'https://api.crossref.org/works'
 UA = 'soumyaray.com-data-check (mailto:soumya.ray@gmail.com)'
 
@@ -45,7 +45,7 @@ def year_of(item)
 end
 
 def site_surnames(paper)
-  Array(paper['authors']).map { |a| norm(a.to_s.split(',').first) }
+  Array(paper['authors']).map { |a| norm(a.to_s.split(',').first).delete_suffix(' jr') }
 end
 
 only = ARGV

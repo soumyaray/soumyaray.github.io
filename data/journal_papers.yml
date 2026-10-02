@@ -14,6 +14,7 @@ papers:
   #   article:
   #   doi:         # lets scripts/crossref_check.rb look the paper up exactly
   #   note:        # shown after the citation
+  #   collaboration: # true: listed under Collaboration Papers, not Journal Papers
   #   abstract:    # shown on the home page for highlights
   - id: JBA2026
     authors:
@@ -57,7 +58,8 @@ papers:
     issue: 3
     pages: 1343-1356
     doi: 10.1287/mnsc.2023.03556
-    note: "* member of the Management Science Reproducibility Collaboration"
+    collaboration: true
+    note: "* member of the Management Science Reproducibility Collaboration (collaborative methodological support; not involved in writing or revising the manuscript)"
   - id: JAIS2024
     authors:
       - Shmueli, G.

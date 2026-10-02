@@ -10,25 +10,23 @@ title: Soumya Ray
 
 span style="display: inline-block;"
   h2 class="h5"
-    = "Current Events"
+    = "Recent Talks"
+span style="display: inline-block; margin-left:10px"
+  small
+    = link_to "See all talks", "talks.html"
 .row
   .col-12
     div class="card"
       div class="card-body"
-        .row
-          .col-12
-            p
-              span Keynote Speech: 
-              i Programmatic Approaches to Structural Equation Modeling
-              br
-              b SASEM 2021 
-              span - July 10
-            p
-              span Invited Talk: 
-              i Ruby in the Classroom: Going off the Rails with Roda
-              br
-              b COSCUP x RubyConf TW 2021 
-              span - Aug 01
+        - data.talks.talks.first(2).each do |talk|
+          p
+            - if talk.kind == 'keynote'
+              span = "Keynote: "
+            i #{talk.title}
+            br
+            - venue = talk.venues.first
+            b #{venue.host}
+            span = " – #{venue.year}"
 
 span style="display: inline-block;"
   h2 class="h5"

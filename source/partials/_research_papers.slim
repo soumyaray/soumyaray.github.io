@@ -2,7 +2,10 @@
   p
     = "#{paper.authors.join(', ')} #{paper.year}"
     br
-    span.paper.title #{paper.title}
+    - if paper.url
+      a.paper.title href="#{paper.url}" #{paper.title}
+    - else
+      span.paper.title #{paper.title}
     br
     - if paper.journal
       span.paper.journal #{paper.journal}
@@ -19,6 +22,14 @@
             = "in proceedings of #{paper.conference}"
             - if paper.location
               = " – (#{paper.location})"
+    - elsif paper.publisher
+      - if paper.book
+        = "in "
+        span.paper.journal #{paper.book}
+        = ", pp. #{paper.pages}" if paper.pages
+        = ", #{paper.publisher}"
+      - else
+        span.paper.journal #{paper.publisher}
     - if paper.note
       br
       small.casual #{paper.note}

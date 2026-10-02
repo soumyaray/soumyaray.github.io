@@ -7,7 +7,7 @@ import fs from 'node:fs';
 const out = process.argv[2];
 const base = process.argv[3] || 'http://localhost:8765';
 fs.mkdirSync(out, { recursive: true });
-const pages = ['', 'research', 'service', 'software', 'courses', 'achievements', 'social'];
+const pages = ['', 'research', 'talks', 'service', 'software', 'courses', 'achievements', 'social'];
 const widths = { desktop: [1280, 900], phone: [390, 844] };
 const log = [];
 

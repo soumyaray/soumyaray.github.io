@@ -1,0 +1,16 @@
+h1.section_title Talks
+
+.card
+  .card-header
+    h2.card-title Keynotes and Invited Talks
+  .card-body
+    - data.talks.talks.each do |talk|
+      p
+        - if talk.kind == 'keynote'
+          span.badge.bg-primary style="margin-right:6px" Keynote
+        span.paper.title #{talk.title}
+        - talk.venues.each do |venue|
+          br
+          span #{venue.host}, #{venue.year}
+          - if venue.virtual
+            span.casual = " (virtual)"

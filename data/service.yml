@@ -60,11 +60,20 @@ services:
       - "International Conference on Information Systems (ICIS)"
       - "Pacific Asia Conference on Information Systems (PACIS)"
 
-  - id: "talk_invited"
-    name: "Invited Talks"
+  - id: "service_university"
+    name: "University Service"
     instances:
-      - "National Taiwan University (2011)"
-      - "National Central University (2012)"
-      - "National Sun Yat-Sen University (2013, 2012)"
-      - "National Tsing-Hua University (2012)"
-      - "Yuan-Ze University (2012)"
+      - "Council Member: Institute of Service Science, NTHU (2010-present)"
+      - "Appointed Student Mentor: Interdisciplinary Program in Management and Technology, NTHU (2011-present)"
+      - "Committee Chair: Top Journal Submission Award Committee, College of Technology Management (2024)"
+      - "Committee Member: College-level Outstanding Teaching Award Committee, College of Technology Management (2024)"
+      - "Committee Chair: Travel Grant for Coauthors Award, College of Technology Management (2022)"
+      - "Council Member: International MBA Program, College of Technology Management (2010-2014; 2020-2021)"
+      - "Council Member: AACSB Certification Board, College of Technology Management (2014-2019)"
+      - "Appointed Student Mentor: NTHU Global Program (2014-2017)"
+      - "Advisory Board Member: NTHU Center for Asia Policy (2014-2016)"
+
+  - id: "public_roles"
+    name: "Public Roles"
+    instances:
+      - "Panel Moderator: Taiwan-ASEAN-India Cooperation Forum (TAICF) 2024 at Computex Taipei, organized by the Taipei Computer Association (TCA)"

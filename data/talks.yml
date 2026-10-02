@@ -1,0 +1,117 @@
+---
+# Invited talks and keynotes, newest first (by latest venue year).
+# One entry per talk title; a talk given at several places lists each venue.
+talks:
+  # - id:
+  #   title:
+  #   kind:       # keynote | invited (default)
+  #   venues:
+  #     - host:   # department / event, institution
+  #       year:   # number, or "2020-2026" for a recurring talk
+  #       virtual: true   # optional
+  - id: ai-it-services-2026
+    title: "AI Initiatives & Collaboration Opportunities in IT Services Research"
+    venues:
+      - host: College of Technology Management, National Tsing Hua University
+        year: 2026
+  - id: genai-healthcare-2026
+    title: "Emerging Applications, Risks & Directions for Generative AI in Healthcare and Social Sciences"
+    venues:
+      - host: Department of Health Policy and Management, Chung Shan Medical University
+        year: 2026
+  - id: code-validity
+    title: "Computational Code Validity and Reproducibility for Scientific Research"
+    venues:
+      - host: College of Life Sciences and Medicine, National Tsing Hua University
+        year: "2020-2026"
+      - host: Trinity Business School, Trinity College Dublin
+        year: 2022
+  - id: interactions-2025
+    title: "It Depends: A Framework for Validating the Substantive Generalizable Value of Interactions"
+    venues:
+      - host: Department of Information Management, National Chung Cheng University
+        year: 2025
+  - id: cryptography-2024
+    title: "A Quick Dive into Cryptography"
+    venues:
+      - host: Department of Information Systems, New Mexico State University
+        year: 2024
+  - id: privacy-positions-2024
+    title: "Privacy Positions: Self-Reliance versus External-Reliance to Cope with Persistent Privacy Concern"
+    venues:
+      - host: Department of Management Information Systems, National Chengchi University
+        year: 2024
+  - id: privacy-dual-nature
+    title: "Who Cares About Privacy? The Dual Nature of Privacy Control in Social Networking Services"
+    venues:
+      - host: Trinity Business School, Trinity College Dublin
+        year: 2022
+      - host: McIntire School of Commerce, University of Virginia
+        year: 2019
+      - host: College of Hospitality and Tourism Leadership, University of South Florida Sarasota-Manatee
+        year: 2019
+  - id: computational-methods-2022
+    title: "Using Computational Methods in Business Research"
+    venues:
+      - host: Business Studies Department, University of Technology and Applied Sciences – Ibri
+        year: 2022
+        virtual: true
+  - id: ruby-classroom-2021
+    title: "Ruby in the Classroom: Going off the Rails with Roda"
+    venues:
+      - host: COSCUP x RubyConf TW
+        year: 2021
+        virtual: true
+  - id: programmatic-sem-2021
+    title: "Programmatic Approaches to Structural Equation Modeling (SEM)"
+    kind: keynote
+    venues:
+      - host: SASEM
+        year: 2021
+        virtual: true
+  - id: survey-research-2019
+    title: "Survey Research: Measurement and Structural Models"
+    venues:
+      - host: Information Management Department, National Taiwan University
+        year: 2019
+  - id: module-ecosystems-2018
+    title: "Data Mining for Healthier Module Ecosystems"
+    venues:
+      - host: Social Networks and Human Centered Computing, Academia Sinica
+        year: 2018
+  - id: gem-miner-2016
+    title: "Gem Miner: Module Ecosystems and Us"
+    venues:
+      - host: Computer Science, National Tsing Hua University
+        year: 2016
+      - host: Information Systems and Applications, National Tsing Hua University
+        year: 2016
+  - id: open-source-2016
+    title: "Jumping into Open Source: New Ways of Working and Living"
+    venues:
+      - host: Computer Science, National Tsing Hua University
+        year: 2016
+  - id: web-api-2016
+    title: "Web API Data Collection: Methods and Means"
+    venues:
+      - host: Management Information Systems, National Kaohsiung Normal University
+        year: 2016
+  - id: engagement
+    title: "The Central Role of Engagement in Online Communities"
+    venues:
+      - host: Management Information Systems, National Kaohsiung Normal University
+        year: 2016
+      - host: Management Information Systems, Yuan Ze University
+        year: 2012
+      - host: Management Information Systems, National Sun Yat-sen University
+        year: 2012
+  - id: online-consumer-2015
+    title: "Online Consumer Behavior: Overview and Research Agenda"
+    venues:
+      - host: Management Information Systems, National Sun Yat-sen University
+        year: 2015
+  - id: routine-use-2013
+    title: "How We Routinely Use Online Services: An Interplay of Conscious and Automatic Mechanisms"
+    venues:
+      - host: Information Systems, Yuan Ze University
+        year: 2013

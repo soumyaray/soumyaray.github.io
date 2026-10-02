@@ -10,6 +10,12 @@
       a href="#conference-papers" conferences
       span.grayed
         = " | "
+      a href="#books" books
+      span.grayed
+        = " | "
+      a href="#collaboration-papers" collaborations
+      span.grayed
+        = " | "
       a href="#lab" lab
 
 / Research Card
@@ -18,8 +24,9 @@ a class="invisible" name="journal-papers"
   .card-header
     h2.card-title Journal Papers
   .card-body
-    - shown = data.journal_papers.papers.first(3)
-    - more = data.journal_papers.papers.drop(3)
+    - journal_papers = data.journal_papers.papers.reject(&:collaboration)
+    - shown = journal_papers.first(3)
+    - more = journal_papers.drop(3)
     = partial("partials/research_papers", locals: { papers: shown })
     a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"
       = "+ #{more.size} more"
@@ -50,6 +57,24 @@ a class="invisible" name="conference-papers"
       .col-6 style="text-align:right;"
         i class="ai ai-researchgate" aria-hidden="true" style="margin-left:10px; margin-right:10px;"
         a href="https://www.researchgate.net/profile/Soumya_Ray5" ResearchGate Profile
+
+/ Books Card
+a class="invisible" name="books"
+.card
+  .card-header
+    h2.card-title
+      = "Books and Chapters"
+  .card-body
+    = partial("partials/research_papers", locals: { papers: data.books.papers })
+
+/ Collaboration Card
+a class="invisible" name="collaboration-papers"
+.card
+  .card-header
+    h2.card-title
+      = "Collaboration Papers"
+  .card-body
+    = partial("partials/research_papers", locals: { papers: data.journal_papers.papers.select(&:collaboration) })
 
 / Lab Card  
 a class="invisible" name="lab"

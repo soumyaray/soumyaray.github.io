@@ -1,0 +1,36 @@
+---
+papers:
+  # - id:          # <PUBLISHER><YEAR>
+  #   authors:
+  #   year:
+  #   title:
+  #   book:        # chapters only: title of the book the chapter is in
+  #   publisher:
+  #   pages:       # chapters only
+  #   doi:
+  #   url:         # optional link, e.g. open-access edition
+  #   note:
+  - id: SPRINGER2021
+    authors:
+      - Hair Jr, J.F.
+      - Hult, G.T.M.
+      - Ringle, C.M.
+      - Sarstedt, M.
+      - Danks, N.P.
+      - Ray, S.
+    year: 2021
+    title: "Partial Least Squares Structural Equation Modeling (PLS-SEM) Using R: A Workbook"
+    publisher: Springer
+    doi: 10.1007/978-3-030-80519-7
+    url: https://link.springer.com/book/10.1007/978-3-030-80519-7
+    note: Open access
+  - id: EMERALD2018
+    authors:
+      - Danks, N.
+      - Ray, S.
+    year: 2018
+    title: "Predictions from Partial Least Squares Models"
+    book: Applying Partial Least Squares in Tourism and Hospitality Research
+    publisher: Emerald Publishing
+    pages: 35-52
+    doi: 10.1108/978-1-78756-699-620181003

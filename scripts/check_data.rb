@@ -8,7 +8,7 @@
 require 'yaml'
 
 DATA = File.expand_path('../data', __dir__)
-PAPER_FILES = %w[journal_papers conference_papers].freeze
+PAPER_FILES = %w[journal_papers conference_papers books].freeze
 
 def load(name)
   YAML.safe_load_file(File.join(DATA, "#{name}.yml"))
@@ -60,12 +60,24 @@ PAPER_FILES.each do |name|
     %w[id authors year title].each do |f|
       errors << "#{label}: missing #{f}" if p[f].nil? || p[f].to_s.strip.empty?
     end
-    unless p['journal'] || p['conference'] || p['book']
-      errors << "#{label}: needs one of journal, conference, book"
+    unless p['journal'] || p['conference'] || p['publisher']
+      errors << "#{label}: needs one of journal, conference, publisher"
     end
     if (m = p['pages'].to_s.match(/\A(\d+)\s*[-–]\s*(\d+)\z/)) && m[1].to_i >= m[2].to_i
       errors << "#{label}: page range #{p['pages']} is not ascending"
     end
+  end
+end
+
+# Talks: title and at least one venue with host and year.
+Array(load('talks')['talks']).each do |t|
+  label = "talks/#{t['id']}"
+  errors << "#{label}: missing title" if t['title'].to_s.strip.empty?
+  errors << "#{label}: kind must be keynote or invited" unless [nil, 'keynote', 'invited'].include?(t['kind'])
+  venues = Array(t['venues'])
+  errors << "#{label}: no venues" if venues.empty?
+  venues.each_with_index do |v, i|
+    errors << "#{label}.venues[#{i}]: needs host and year" unless v['host'] && v['year']
   end
 end
 
