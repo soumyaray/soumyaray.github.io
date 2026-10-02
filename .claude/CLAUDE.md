@@ -23,6 +23,9 @@ Image tasks need ImageMagick (`convert`). There are no tests or linters; `script
 ```bash
 bash scripts/smoke.sh                       # middleman serve, every page must return 200
 (cd scripts && node shoot.mjs shots/after)  # Playwright screenshots of a served build (needs npm install once)
+ruby scripts/check_data.rb                  # data/*.yml structure: unique ids, highlights resolve, paper fields
+ruby scripts/crossref_check.rb              # paper metadata vs Crossref (network)
+ruby scripts/cv_check.rb                    # CV sections vs data/*.yml coverage report
 ```
 
 ## Branches, build, and deploy
@@ -44,6 +47,8 @@ The `master` branch in this outer checkout is stale (years behind); the up-to-da
 ## Content and images
 
 `data/` (YAML content) and `source/images/` are tracked on `source`. Content edits show up in `git diff` on `source` and, after a rebuild, as changed HTML in `build/`. Commit messages with a `data:` prefix cover content changes.
+
+The source of truth for content is the CV at `/Users/soumyaray/Sync/Dropbox/Work/Curriculum Vitae/Soumya Ray - CV.pdf` (and `.docx`; older versions in `OLD CVs/`). Treat it as **read-only**: read it (e.g. `pdftotext -layout`), never edit or move it. The site's download copy is `source/downloads/SoumyaRay-CV.pdf`; replace it with the latest PDF when content is refreshed.
 
 Images are stored once in the repo: git shares a blob across branches, so an image on both `source` and `master` costs nothing extra.
 
