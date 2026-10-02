@@ -131,6 +131,15 @@ img.right {
   float: right;
 }
 
+/* On phones a floated thumbnail leaves too narrow a column for the text */
+@media (max-width: 575.98px) {
+  img.right {
+    float: none;
+    display: block;
+    margin: 0 auto 10px;
+  }
+}
+
 body#bootstrap-override {
   padding:50px;
   background-color: #f3f3f3;
