@@ -48,7 +48,7 @@ The `master` branch in this outer checkout is stale (years behind); the up-to-da
 
 `data/` (YAML content) and `source/images/` are tracked on `source`. Content edits show up in `git diff` on `source` and, after a rebuild, as changed HTML in `build/`. Commit messages with a `data:` prefix cover content changes.
 
-The source of truth for content is the CV at `/Users/soumyaray/Sync/Dropbox/Work/Curriculum Vitae/Soumya Ray - CV.pdf` (and `.docx`; older versions in `OLD CVs/`). Treat it as **read-only**: read it (e.g. `pdftotext -layout`), never edit or move it. The site's download copy is `source/downloads/SoumyaRay-CV.pdf`; replace it with the latest PDF when content is refreshed.
+The source of truth for content is the CV at `/Users/soumyaray/Sync/Dropbox/Work/Curriculum Vitae/Soumya Ray - CV.pdf` (and `.docx`; older versions in `OLD CVs/`). Treat it as **read-only**: read it (e.g. `pdftotext -layout`), never edit or move it. The site's download copy is `source/downloads/SoumyaRay-CV.pdf`; replace it with the latest PDF when content is refreshed. The full refresh procedure is the `cv-site-update` skill (`.claude/skills/cv-site-update/SKILL.md`).
 
 Images are stored once in the repo: git shares a blob across branches, so an image on both `source` and `master` costs nothing extra.
 
