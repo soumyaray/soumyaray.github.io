@@ -30,7 +30,7 @@ packages:
   - id: compstatslib
     name: compstatslib
     short_description: R package for interactive, visual learning and teaching of computation and statistics
-    home_url: https://cran.r-project.org/web/packages/compstatslib/index.html
+    home_url: https://compstatslib.github.io
     git_url: https://github.com/compstatslib/compstatslib
     manual: https://cran.r-project.org/web/packages/compstatslib/compstatslib.pdf
     description: >
