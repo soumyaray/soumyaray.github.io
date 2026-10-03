@@ -1,6 +1,6 @@
 ---
-name: cv-site-update
-description: Refresh soumyaray.com content from the latest CV — compare the CV with data/*.yml, fix and add papers, awards, grants, service, talks, courses, software and syllabi, replace the CV download, check, build, and deploy. Use when the user says the CV was updated, asks to sync or refresh the site from the CV, or mentions "cv-site-update".
+name: cv-update
+description: Refresh soumyaray.com content from the latest CV — compare the CV with data/*.yml, fix and add papers, awards, grants, service, talks, courses, software and syllabi, replace the CV download, check, build, and deploy. Use when the user says the CV was updated, asks to sync or refresh the site from the CV, or mentions "cv-update".
 ---
 
 # Update the site from the CV
