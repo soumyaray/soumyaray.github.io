@@ -11,7 +11,8 @@ Personal academic website for soumyaray.com, a static site built with Middleman 
 ```bash
 bundle install
 bundle exec rake serve      # middleman serve (http://localhost:4567); no livereload, refresh manually
-bundle exec rake build      # middleman build → ./build (CSS/JS minified)
+bundle exec rake build      # rake cv, then middleman build → ./build (CSS/JS minified)
+bundle exec rake cv         # copy the CV PDF into source/downloads/ if it changed; warns if the .docx is newer
 bundle exec rake images:convert:thumbnail   # *_original.png → *_thumb.png (200px wide)
 bundle exec rake images:convert:modal       # *_original.png → *_modal.png (568px wide)
 bundle exec rake images:delete              # remove all *_thumb.png
@@ -37,7 +38,7 @@ One GitHub repo, two branches with unrelated contents:
 
 `build/` is gitignored on `source`, but it is itself a **separate clone of the same repo, checked out on `master`** (it has its own `build/.git`). Middleman's build clean skips dotfiles, so `build/.git` survives each rebuild. The deploy flow is:
 
-1. On `source`: edit, `rake build`, commit and push `source`.
+1. On `source`: edit, `rake build` (it brings in a changed CV PDF first; commit `source/downloads/SoumyaRay-CV.pdf` if it says so), commit and push `source`.
 2. `cd build`, review `git status`/diff, then commit and push `master` from there (`git -C build …`).
 
 The `master` branch in this outer checkout is stale (years behind); the up-to-date `master` is the one in `build/`.
@@ -48,7 +49,7 @@ The `master` branch in this outer checkout is stale (years behind); the up-to-da
 
 `data/` (YAML content) and `source/images/` are tracked on `source`. Content edits show up in `git diff` on `source` and, after a rebuild, as changed HTML in `build/`. Commit messages with a `data:` prefix cover content changes.
 
-The source of truth for content is the CV at `/Users/soumyaray/Sync/Dropbox/Work/Curriculum Vitae/Soumya Ray - CV.pdf` (and `.docx`; older versions in `OLD CVs/`). Treat it as **read-only**: read it (e.g. `pdftotext -layout`), never edit or move it. The site's download copy is `source/downloads/SoumyaRay-CV.pdf`; replace it with the latest PDF when content is refreshed. The full refresh procedure is the `cv-update` skill (`.claude/skills/cv-update/SKILL.md`).
+The source of truth for content is the CV at `/Users/soumyaray/Sync/Dropbox/Work/Curriculum Vitae/Soumya Ray - CV.pdf` (and `.docx`; older versions in `OLD CVs/`). Treat it as **read-only**: read it (e.g. `pdftotext -layout`), never edit or move it. The site's download copy is `source/downloads/SoumyaRay-CV.pdf`; `rake cv` (run by every `rake build`) keeps it in step with the CV PDF. When it brings in a new CV, check whether the content changed too (`ruby scripts/cv_check.rb`). The full refresh procedure is the `cv-update` skill (`.claude/skills/cv-update/SKILL.md`).
 
 Images are stored once in the repo: git shares a blob across branches, so an image on both `source` and `master` costs nothing extra.
 

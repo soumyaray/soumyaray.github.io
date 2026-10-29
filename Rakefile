@@ -1,5 +1,29 @@
-desc 'Build the site master into build folder'
-task :build do
+require 'fileutils'
+
+CV_DIR = File.expand_path('~/Sync/Dropbox/Work/Curriculum Vitae')
+CV_PDF = File.join(CV_DIR, 'Soumya Ray - CV.pdf')
+CV_DOCX = File.join(CV_DIR, 'Soumya Ray - CV.docx')
+CV_SITE = 'source/downloads/SoumyaRay-CV.pdf'
+
+# The CV is read-only: this only copies it into the site.
+desc 'Copy the latest CV PDF into the site download if it changed'
+task :cv do
+  next warn("CV not found, download left as is: #{CV_PDF}") unless File.exist?(CV_PDF)
+
+  if File.exist?(CV_DOCX) && File.mtime(CV_DOCX) > File.mtime(CV_PDF)
+    warn 'Warning: the CV .docx is newer than its PDF; export a fresh PDF if it has new content'
+  end
+  if FileUtils.compare_file(CV_PDF, CV_SITE)
+    puts 'CV download is up to date'
+  else
+    FileUtils.cp(CV_PDF, CV_SITE)
+    updated = `pdftotext "#{CV_PDF}" - 2>/dev/null`[/updated:\s*(\S+)/, 1]
+    puts "CV download updated (#{updated || 'new PDF'}); commit #{CV_SITE} on source"
+  end
+end
+
+desc 'Build the site master into build folder (brings in the latest CV first)'
+task build: :cv do
   sh 'bundle exec middleman build'
 end
 

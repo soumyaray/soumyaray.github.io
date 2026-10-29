@@ -36,7 +36,7 @@ Keep `SECTIONS` in `cv_check.rb` in step with any new data file.
 4. **Papers.** Edit `journal_papers.yml` / `conference_papers.yml` / `books.yml`, then `ruby scripts/crossref_check.rb`. Crossref wins over the CV for volume, issue, pages, year, and author order (the CV keeps stale online-first details). Add `doi:` to every paper Crossref knows.
 5. **Other data files.** The CV wins for content (award and role names, dates), except for the corrected names listed below.
 6. **Syllabi.** See the section below.
-7. **CV download.** Replace `source/downloads/SoumyaRay-CV.pdf` with the CV PDF.
+7. **CV download.** `bundle exec rake cv` copies the CV PDF to `source/downloads/SoumyaRay-CV.pdf` (every `rake build` also runs it). If it warns that the `.docx` is newer than the PDF, ask the user to export a fresh PDF.
 8. **Check.** `ruby scripts/check_data.rb`, `bash scripts/smoke.sh`, rebuild, `(cd scripts && node shoot.mjs shots/after)`, and look at the changed pages.
 9. **Coverage.** `ruby scripts/cv_check.rb` again. Every remaining flag must be a deliberate omission (below). Record new ones in this skill.
 10. **Tell the user** about errors found in the CV (it is read-only; they fix it).
@@ -81,9 +81,9 @@ Keep `SECTIONS` in `cv_check.rb` in step with any new data file.
 - Education and university–industry collaborations: user said "leave out for now" (2026-10). **Ask again** each refresh.
 - PhD scholarships (pre-2010), UW teaching-assistant work, project assistantships/internships, working papers.
 
-## Known CV errors (as of the Sep-28-2026 CV — recheck, then tell the user if still present)
+## Known CV errors (as of the Oct-29-2026 CV — recheck, then tell the user if still present)
 
 - ISF 2022 pages: CV 570–594, Crossref 579–594.
-- Decision Sciences paper: CV "2018, (21:1), pp. 243-241" and order Sharma, Sarstedt, Shmueli; Crossref 2021, 52(3), 567–607, order Sharma, Shmueli, Sarstedt, Danks, Ray.
+- Decision Sciences paper: CV year 2018 and order Sharma, Sarstedt, Shmueli; Crossref 2021, order Sharma, Shmueli, Sarstedt, Danks, Ray. (Volume and pages fixed in the Oct-29-2026 CV: 52(3), 567–607.)
 - Cyberloafing (ITEM): CV 2017, pp. 1–19; Crossref 2018, 19(4), 197–215.
 - compstatslib repo: CV says `github.com/soumyaray/compstatslib`; the package uses `github.com/compstatslib/compstatslib` (the site uses the latter).
