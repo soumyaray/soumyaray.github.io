@@ -47,6 +47,12 @@ end
   end
 end
 
+experience = load('experience')
+role_ids = experience['groups'].flat_map { |g| g['affiliations'] }.flat_map { |a| a['roles'] }.map { |r| r['id'] }
+Array(experience['current']).each do |c|
+  errors << "experience.current: #{c.inspect} is not a role id" unless role_ids.include?(c)
+end
+
 social = load('social')
 social_ids = social['identities'].values.flatten.map { |e| e['id'] }
 Array(social['highlights']).each do |h|

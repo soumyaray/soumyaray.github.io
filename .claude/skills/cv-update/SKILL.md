@@ -72,12 +72,13 @@ Keep `SECTIONS` in `cv_check.rb` in step with any new data file.
 - **Grants**: grouped by role (PI / Co-I). Start year = ROC year in the grant ID + 1911; one-year grants span two calendar years (Aug–Jul); `-MY3` spans three. Co-I projects have no dates or IDs.
 - **Courses**: `name` carries the abbreviation; the page does not append `(id)`. `id` = the abbreviation and keys both `images/courses/<id>/` and `downloads/syllabi/<id>.pdf`; renaming a course means `git mv` of the image folder. CSDS was "Business Analytics Using Computational Statistics (BACS)" (id BASM) until 2025; its overview image still says "BASM".
 - **Talks**: one `talks.yml` entry per title, venues newest first; the file is ordered by latest venue year (the home page shows the first two). A recurring talk uses `year: "2020-2026"`.
+- **Experience**: `experience.yml` groups affiliations (newest first) with their roles; `current:` names the role ids the home page shows. Add visiting positions to the `visiting` group; when a new rank starts, add the role and point `current:` at it.
 - **Software**: SEMinR's home is <https://seminr.io>; check its resources page for new books or videos (`book_url`, `video_url`).
 - **Names the site corrects** (check when copying from the CV): McIntire School of **Commerce**; **National** Chung Cheng University; University of Technology and Applied **Sciences** – Ibri; Taipei Computer Association (台北市電腦商業同業公會; CV says "Taiwan"); the Emerald book is "**Applying** Partial Least Squares in Tourism and Hospitality Research" (CV says "Application of PLS-SEM in …"). CV typos the site corrects: "Informaion", "Difusion", "Pacific Asian Journal…".
 
 ## Deliberate omissions (expected `cv_check.rb` flags)
 
-- Academic experience / education and university–industry collaborations: user said "leave out for now" (2026-10). **Ask again** each refresh.
+- Education and university–industry collaborations: user said "leave out for now" (2026-10). **Ask again** each refresh.
 - PhD scholarships (pre-2010), UW teaching-assistant work, project assistantships/internships, working papers.
 
 ## Known CV errors (as of the Sep-28-2026 CV — recheck, then tell the user if still present)

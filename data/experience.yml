@@ -1,0 +1,47 @@
+---
+# current: role ids shown under the name on the home page.
+# groups: each holds affiliations, newest first; an affiliation lists its roles,
+#   newest first. Unit names drop the CV's abbreviations ("(ISS)").
+#   - id:            # "<role>-<institution>", referenced by current:
+#     title:
+#     dates:         # "Mon YYYY – Mon YYYY" or "Mon YYYY – present"
+current:
+  - DP-NTHU
+groups:
+  - id: "faculty"
+    name: "Faculty Appointments"
+    affiliations:
+      - institution: "National Tsing Hua University"
+        units:
+          - Institute of Service Science
+          - College of Technology Management
+        location: "Hsinchu, Taiwan"
+        roles:
+          - id: DP-NTHU
+            title: Distinguished Professor
+            dates: "Jul 2021 – present"
+          - id: AsP-NTHU
+            title: Associate Professor
+            dates: "Aug 2015 – Jun 2021"
+          - id: AP-NTHU
+            title: Assistant Professor
+            dates: "Aug 2010 – Jul 2015"
+  - id: "visiting"
+    name: "Visiting Positions"
+    affiliations:
+      - institution: "Universität zu Lübeck"
+        units:
+          - Institute of Human-Centered Interactive Systems
+        location: "Lübeck, Germany"
+        roles:
+          - id: VR-Lubeck
+            title: Visiting Researcher
+            dates: "Oct 2026 – Nov 2026"
+      - institution: "University of California, Berkeley"
+        units:
+          - School of Information
+        location: "Berkeley, USA"
+        roles:
+          - id: VS-Berkeley
+            title: Visiting Scholar
+            dates: "Aug 2019 – Jun 2020"

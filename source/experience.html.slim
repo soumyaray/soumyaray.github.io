@@ -1,0 +1,23 @@
+h1.section_title Academic Experience
+
+.row
+  - data.experience.groups.each do |group|
+    .col-sm-12
+      div class="card"
+        div class="card-header"
+          h2.card-title
+            = group.name
+        div class="card-body"
+          - group.affiliations.each do |aff|
+            .row.experience
+              .col-md-5
+                - aff.roles.each do |role|
+                  span.text-nowrap #{role.title}
+                  span.casual.text-nowrap = " (#{role.dates})"
+                  br
+              .col-md-7.affiliation
+                - aff.units.each do |unit|
+                  span #{unit}
+                  br
+                b #{aff.institution}
+                span.casual = " – #{aff.location}"

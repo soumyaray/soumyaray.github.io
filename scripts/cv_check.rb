@@ -26,6 +26,7 @@ THRESHOLD = 0.75
 # :caps  — only lines that open with an upper-case name ("COURSE NAME (X): …");
 #          the text before the first colon is the entry
 SECTIONS = {
+  'ACADEMIC EXPERIENCE' => [%w[experience], :line],
   'JOURNAL ARTICLES' => [%w[journal_papers], :paper],
   'COLLABORATION PAPERS' => [%w[journal_papers], :paper],
   'NOTABLE CONFERENCE PROCEEDINGS' => [%w[conference_papers], :paper],

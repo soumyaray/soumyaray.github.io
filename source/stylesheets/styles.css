@@ -64,7 +64,7 @@
   }
   .sidebar-nav .navbar .navbar-collapse {
     flex-direction: column;
-    padding-top: 12px;
+    padding-top: 24px;
     padding-bottom: 12px;
   }
   .sidebar-nav .navbar .navbar-nav {
@@ -116,6 +116,24 @@ ul.bullet-free {
 
 .casual {
   font-weight: 200;
+}
+
+/* Experience: roles on the left, affiliation on the right behind a thin rule */
+.row.experience {
+  margin-bottom: 1.5rem;
+}
+.row.experience:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .experience .affiliation {
+    border-left: 1px solid #ddd;
+  }
+}
+@media (max-width: 767.98px) {
+  .experience .affiliation {
+    margin-top: 0.25rem;
+  }
 }
 
 img.small {

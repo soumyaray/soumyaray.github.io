@@ -35,7 +35,7 @@ To shoot the live site, add the URL: `node shoot.mjs shots/live https://soumyara
 
 ## `check_data.rb`: structural checks on `data/*.yml`
 
-Plain Ruby, no gems. It fails on duplicate `id`s, `highlights` that point at no entry, papers without `authors`/`year`/`title`/venue, and page ranges that are not ascending. Run it after every data edit.
+Plain Ruby, no gems. It fails on duplicate `id`s, `highlights` that point at no entry, papers without `authors`/`year`/`title`/venue, `experience.current` ids that name no role, and page ranges that are not ascending. Run it after every data edit.
 
 ```bash
 ruby scripts/check_data.rb

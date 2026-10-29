@@ -1,0 +1,13 @@
+- exp = data.experience
+- exp.current.each do |id|
+  - exp.groups.each do |group|
+    - group.affiliations.each do |aff|
+      - role = aff.roles.find { |r| r.id == id }
+      - next unless role
+      p
+        b #{role.title}
+        - aff.units.each do |unit|
+          br
+          = unit
+        br
+        = aff.institution
