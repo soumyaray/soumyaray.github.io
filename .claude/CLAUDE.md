@@ -83,3 +83,4 @@ folder there.
 - Reference files in the same folder by bare filename; files in other folders by full path from the repo root.
 - `CLAUDE.local.md` `@`-includes the active plan.
 - Closed plans get a `> **CLOSED** (date): …` note under the title and keep their number.
+- Loose to-dos that are not yet a work stream go in `.claude/plans/BACKLOG.md` (no number, no folder).
